@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
@@ -14,18 +14,18 @@ const AanpakCard = (props) => {
         />
         <h3>
           {props.cardTitle ?? (
-            <fragment>
-              <span className="aanpak-card-text2">Persoonlijke aanpak</span>
-            </fragment>
+            <Fragment>
+              <h3 className="aanpak-card-text3">Persoonlijke aanpak</h3>
+            </Fragment>
           )}
         </h3>
         <span>
           {props.cardDescription ?? (
-            <fragment>
-              <span className="aanpak-card-text3">
+            <Fragment>
+              <span className="aanpak-card-text4">
                 Persoonlijke aandacht. Uw doelen, onze focus.
               </span>
-            </fragment>
+            </Fragment>
           )}
         </span>
       </div>
@@ -41,10 +41,10 @@ const AanpakCard = (props) => {
             justify-content: flex-start;
           }
           .aanpak-card-image {
-            width: var(--dl-size-size-medium);
+            width: var(--dl-size-size-small);
             object-fit: cover;
           }
-          .aanpak-card-text2 {
+          .aanpak-card-text3 {
             fill: var(--dl-color-primary-main);
             color: var(--dl-color-primary-main);
             display: inline-block;
@@ -52,7 +52,7 @@ const AanpakCard = (props) => {
             text-align: center;
             margin-bottom: var(--dl-space-space-halfunit);
           }
-          .aanpak-card-text3 {
+          .aanpak-card-text4 {
             width: var(--dl-size-size-large);
             display: inline-block;
             font-size: 10px;
@@ -60,7 +60,7 @@ const AanpakCard = (props) => {
           }
 
           @media (max-width: 767px) {
-            .aanpak-card-text3 {
+            .aanpak-card-text4 {
               width: auto;
             }
           }
@@ -72,7 +72,7 @@ const AanpakCard = (props) => {
 
 AanpakCard.defaultProps = {
   rootClassName: '',
-  imageSrc: '/Aanpak/icon/aanpak2-200h.png',
+  imageSrc: '/Aanpak/icon/aanpak-1-200h.png',
   cardTitle: undefined,
   imageAlt: 'image',
   cardDescription: undefined,

@@ -7,16 +7,16 @@ const ContentList4 = (props) => {
     <>
       <div className="content-list4-container thq-section-padding">
         <div className="content-list4-max-width thq-flex-column thq-section-max-width">
-          <div className="content-list4-content thq-flex-column">
-            <ul className="content-list4-ul thq-flex-column">
-              <li className="content-list4-li thq-flex-column list-item">
+          <div className="content-list4-content14 thq-flex-column">
+            <ul className="content-list4-ul1 thq-flex-column">
+              <li className="content-list4-li10 thq-flex-column list-item">
                 <h2 className="content-list4-heading7 thq-heading-2">
                   {props.heading7}
                 </h2>
                 <p className="content-list4-content7 thq-body-small">
                   {props.content7}
                 </p>
-                <ul className="content-list4-ul1 thq-flex-column">
+                <ul className="content-list4-ul2 thq-flex-column">
                   <li className="list-item">
                     <h3 className="thq-heading-3">{props.heading8}</h3>
                     <p className="thq-body-small">{props.content2}</p>
@@ -29,17 +29,19 @@ const ContentList4 = (props) => {
               </li>
             </ul>
           </div>
-          <div className="content-list4-content1 thq-flex-column content-list4-content1 thq-body-small">
-            <ul className="content-list4-ul2 thq-flex-column">
-              <li className="content-list4-li03 thq-flex-column list-item">
+          <div className="content-list4-content15 thq-flex-column">
+            <ul className="content-list4-ul3 thq-flex-column">
+              <li className="content-list4-li13 thq-flex-column list-item">
                 <h2 className="content-list4-heading1 thq-heading-2">
                   {props.heading1}
                 </h2>
-                <p>{props.content1}</p>
-                <ul className="content-list4-ul3 thq-flex-column">
+                <p className="content-list4-content1 thq-body-small">
+                  {props.content1}
+                </p>
+                <ul className="content-list4-ul4 thq-flex-column">
                   <li className="list-item">
                     <h3 className="thq-heading-3">{props.heading2}</h3>
-                    <p>{props.content2}</p>
+                    <p className="thq-body-small">{props.content2}</p>
                   </li>
                   <li className="list-item">
                     <h3 className="thq-heading-3">{props.heading3}</h3>
@@ -61,16 +63,16 @@ const ContentList4 = (props) => {
               </li>
             </ul>
           </div>
-          <div className="thq-body-small content-list4-content2 thq-flex-column">
-            <ul className="content-list4-ul4 thq-flex-column">
-              <li className="content-list4-li09 thq-flex-column list-item">
+          <div className="content-list4-content16 thq-flex-column">
+            <ul className="content-list4-ul5 thq-flex-column">
+              <li className="content-list4-li19 thq-flex-column list-item">
                 <h2 className="content-list4-heading10 thq-heading-2">
                   {props.heading10}
                 </h2>
                 <p className="content-list4-content10 thq-body-small">
                   {props.content10}
                 </p>
-                <ul className="content-list4-ul5 thq-flex-column">
+                <ul className="content-list4-ul6 thq-flex-column">
                   <li className="list-item">
                     <h3 className="thq-heading-3">{props.heading11}</h3>
                     <p className="thq-body-small">{props.content11}</p>
@@ -106,14 +108,14 @@ const ContentList4 = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .content-list4-content {
+          .content-list4-content14 {
             align-self: stretch;
             align-items: flex-start;
           }
-          .content-list4-ul {
+          .content-list4-ul1 {
             align-items: flex-start;
           }
-          .content-list4-li {
+          .content-list4-li10 {
             align-items: flex-start;
           }
           .content-list4-heading7 {
@@ -123,18 +125,18 @@ const ContentList4 = (props) => {
           .content-list4-content7 {
             margin-bottom: var(--dl-space-space-halfunit);
           }
-          .content-list4-ul1 {
+          .content-list4-ul2 {
             align-items: flex-start;
             padding-left: var(--dl-space-space-fiveunits);
           }
-          .content-list4-content1 {
+          .content-list4-content15 {
             align-self: stretch;
             align-items: flex-start;
           }
-          .content-list4-ul2 {
+          .content-list4-ul3 {
             align-items: flex-start;
           }
-          .content-list4-li03 {
+          .content-list4-li13 {
             align-items: flex-start;
           }
           .content-list4-heading1 {
@@ -144,18 +146,18 @@ const ContentList4 = (props) => {
           .content-list4-content1 {
             margin-bottom: var(--dl-space-space-halfunit);
           }
-          .content-list4-ul3 {
+          .content-list4-ul4 {
             align-items: flex-start;
             padding-left: var(--dl-space-space-fiveunits);
           }
-          .content-list4-content2 {
+          .content-list4-content16 {
             align-self: stretch;
             align-items: flex-start;
           }
-          .content-list4-ul4 {
+          .content-list4-ul5 {
             align-items: flex-start;
           }
-          .content-list4-li09 {
+          .content-list4-li19 {
             align-items: flex-start;
           }
           .content-list4-heading10 {
@@ -165,29 +167,29 @@ const ContentList4 = (props) => {
           .content-list4-content10 {
             margin-bottom: var(--dl-space-space-halfunit);
           }
-          .content-list4-ul5 {
+          .content-list4-ul6 {
             align-items: flex-start;
             padding-left: var(--dl-space-space-fiveunits);
           }
           @media (max-width: 767px) {
-            .content-list4-ul1 {
+            .content-list4-ul2 {
               padding-left: var(--dl-space-space-threeunits);
             }
-            .content-list4-ul3 {
+            .content-list4-ul4 {
               padding-left: var(--dl-space-space-threeunits);
             }
-            .content-list4-ul5 {
+            .content-list4-ul6 {
               padding-left: var(--dl-space-space-threeunits);
             }
           }
           @media (max-width: 479px) {
-            .content-list4-ul1 {
+            .content-list4-ul2 {
               padding-left: var(--dl-space-space-oneandhalfunits);
             }
-            .content-list4-ul3 {
+            .content-list4-ul4 {
               padding-left: var(--dl-space-space-oneandhalfunits);
             }
-            .content-list4-ul5 {
+            .content-list4-ul6 {
               padding-left: var(--dl-space-space-oneandhalfunits);
             }
           }

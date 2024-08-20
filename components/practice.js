@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
@@ -15,9 +15,9 @@ const Practice = (props) => {
           />
           <span>
             {props.text ?? (
-              <fragment>
-                <span className="practice-text1">...</span>
-              </fragment>
+              <Fragment>
+                <span className="practice-text2">...</span>
+              </Fragment>
             )}
           </span>
         </div>
@@ -42,9 +42,6 @@ const Practice = (props) => {
             flex-direction: column;
           }
           .practice-header {
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 600;
             line-height: 36px;
           }
           .practice-image {
@@ -54,7 +51,7 @@ const Practice = (props) => {
           .practice-more {
             border: 2px dashed rgba(120, 120, 120, 0.4);
           }
-          .practice-text1 {
+          .practice-text2 {
             display: inline-block;
           }
           @media (max-width: 767px) {

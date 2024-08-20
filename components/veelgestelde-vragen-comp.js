@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
@@ -11,41 +11,42 @@ const VeelgesteldeVragenComp = (props) => {
   const [faq2Visible, setFaq2Visible] = useState(false)
   return (
     <>
-      <div className="veelgestelde-vragen-comp-faq8 thq-section-padding">
+      <div
+        className={`veelgestelde-vragen-comp-faq8 thq-section-padding ${props.rootClassName} `}
+      >
         <div className="veelgestelde-vragen-comp-max-width thq-section-max-width">
-          <div className="veelgestelde-vragen-comp-container thq-flex-column">
+          <div className="veelgestelde-vragen-comp-container10 thq-flex-column">
             <div className="veelgestelde-vragen-comp-section-title thq-flex-column">
-              <h2 className="veelgestelde-vragen-comp-text thq-heading-2">
+              <h2 className="veelgestelde-vragen-comp-text10 thq-heading-2">
                 {props.heading1}
               </h2>
-              <p className="veelgestelde-vragen-comp-text1 thq-body-large">
+              <p className="veelgestelde-vragen-comp-text11 thq-body-large">
                 {props.content1}
               </p>
-              <div className="veelgestelde-vragen-comp-container01">
-                <a
-                  href="#contact"
-                  className="veelgestelde-vragen-comp-book button button-main"
-                >
-                  <span>{props.action}</span>
-                </a>
-              </div>
+              <a href="/#contact" target="_blank" rel="noreferrer noopener">
+                <div className="veelgestelde-vragen-comp-container11">
+                  <button className="button button-main veelgestelde-vragen-comp-book">
+                    <span>{props.action}</span>
+                  </button>
+                </div>
+              </a>
             </div>
             <div className="veelgestelde-vragen-comp-list thq-flex-column">
               <div className="thq-divider-horizontal"></div>
               <div className="veelgestelde-vragen-comp-faq1">
                 <div
                   onClick={() => setFaq1Visible(!faq1Visible)}
-                  className="veelgestelde-vragen-comp-trigger"
+                  className="veelgestelde-vragen-comp-trigger1"
                 >
-                  <p className="veelgestelde-vragen-comp-faq1-question thq-body-large">
+                  <p className="veelgestelde-vragen-comp-faq1-question1 thq-body-large">
                     {props.faq1Question}
                   </p>
-                  <div className="veelgestelde-vragen-comp-icons-container">
+                  <div className="veelgestelde-vragen-comp-icons-container1">
                     {!faq1Visible && (
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon"
+                          className="veelgestelde-vragen-comp-icon10"
                         >
                           <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
                         </svg>
@@ -55,7 +56,7 @@ const VeelgesteldeVragenComp = (props) => {
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon02"
+                          className="veelgestelde-vragen-comp-icon12"
                         >
                           <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
                         </svg>
@@ -64,8 +65,32 @@ const VeelgesteldeVragenComp = (props) => {
                   </div>
                 </div>
                 {faq1Visible && (
-                  <div className="veelgestelde-vragen-comp-container04">
-                    <span className="thq-body-small">{props.faq1Content}</span>
+                  <div className="veelgestelde-vragen-comp-container14">
+                    <span>
+                      {props.text2 ?? (
+                        <Fragment>
+                          <span className="veelgestelde-vragen-comp-text36 thq-body-small">
+                            <span>- Voorschrift van de dokter</span>
+                            <br></br>
+                            <span>- Verslagen, beeldvorming,...</span>
+                            <br></br>
+                            <span>- Identiteitskaart</span>
+                            <br></br>
+                            <span>- Klever van de mutualiteit</span>
+                            <br></br>
+                            <span>
+                              - Grote badhanddoek om op tafel te leggen.
+                            </span>
+                            <br></br>
+                            <span>
+                              - Sportieve/gemakkelijke kledij indien
+                              sportrevalidatie
+                            </span>
+                            <br></br>
+                          </span>
+                        </Fragment>
+                      )}
+                    </span>
                   </div>
                 )}
               </div>
@@ -73,17 +98,17 @@ const VeelgesteldeVragenComp = (props) => {
               <div className="veelgestelde-vragen-comp-faq2">
                 <div
                   onClick={() => setFaq2Visible(!faq2Visible)}
-                  className="veelgestelde-vragen-comp-trigger1"
+                  className="veelgestelde-vragen-comp-trigger2"
                 >
-                  <p className="veelgestelde-vragen-comp-faq2-question thq-body-large">
+                  <p className="veelgestelde-vragen-comp-faq2-question1 thq-body-large">
                     {props.faq2Question}
                   </p>
-                  <div className="veelgestelde-vragen-comp-icons-container1">
+                  <div className="veelgestelde-vragen-comp-icons-container2">
                     {!faq2Visible && (
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon04"
+                          className="veelgestelde-vragen-comp-icon14"
                         >
                           <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
                         </svg>
@@ -93,7 +118,7 @@ const VeelgesteldeVragenComp = (props) => {
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon06"
+                          className="veelgestelde-vragen-comp-icon16"
                         >
                           <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
                         </svg>
@@ -102,13 +127,19 @@ const VeelgesteldeVragenComp = (props) => {
                   </div>
                 </div>
                 {faq2Visible && (
-                  <div className="veelgestelde-vragen-comp-container07">
+                  <div className="veelgestelde-vragen-comp-container17">
                     <span className="thq-body-small">
-                      Et minima tempore et neque voluptatem eos amet officiis et
-                      temporibus Quis. Et suscipit esse id nemo sunt At nihil
-                      earum et consequatur fuga aut sapiente voluptate est
-                      cupiditate esse non dolor cumque. Ut obcaecati recusandae
-                      et beatae quae qui doloremque eligendi sit eaque labore.
+                      <span>
+                        - Hospitaalstraat (opgelet, vaak worden deze plekken
+                        gebruikt door bewoners)
+                      </span>
+                      <br></br>
+                      <span>- Reinpadstraat</span>
+                      <br></br>
+                      <span>
+                        - Parking einde Reinpadstraat (hoek met Bochtlaan); op
+                        50m van de praktijk
+                      </span>
                     </span>
                   </div>
                 )}
@@ -117,17 +148,17 @@ const VeelgesteldeVragenComp = (props) => {
               <div className="veelgestelde-vragen-comp-faq3">
                 <div
                   onClick={() => setFaq3Visible(!faq3Visible)}
-                  className="veelgestelde-vragen-comp-trigger2"
+                  className="veelgestelde-vragen-comp-trigger3"
                 >
-                  <p className="veelgestelde-vragen-comp-faq2-question1 thq-body-large">
+                  <p className="veelgestelde-vragen-comp-faq2-question2 thq-body-large">
                     {props.faq3Question}
                   </p>
-                  <div className="veelgestelde-vragen-comp-icons-container2">
+                  <div className="veelgestelde-vragen-comp-icons-container3">
                     {!faq3Visible && (
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon08"
+                          className="veelgestelde-vragen-comp-icon18"
                         >
                           <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
                         </svg>
@@ -137,7 +168,7 @@ const VeelgesteldeVragenComp = (props) => {
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon10"
+                          className="veelgestelde-vragen-comp-icon20"
                         >
                           <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
                         </svg>
@@ -146,8 +177,24 @@ const VeelgesteldeVragenComp = (props) => {
                   </div>
                 </div>
                 {faq3Visible && (
-                  <div className="veelgestelde-vragen-comp-container10">
-                    <span className="thq-body-small">{props.faq3Content}</span>
+                  <div className="veelgestelde-vragen-comp-container20">
+                    <span>
+                      {props.text1 ?? (
+                        <Fragment>
+                          <span className="veelgestelde-vragen-comp-text49 thq-body-small">
+                            <span>
+                              Indien nodig doen wij huisbezoeken. Indien je
+                              mobiliteit het toelaat, raden we toch aan
+                            </span>
+                            <br></br>
+                            <span>
+                              om naar de praktijk te komen. Huisbezoeken
+                              beperken zich tot Genk.
+                            </span>
+                          </span>
+                        </Fragment>
+                      )}
+                    </span>
                   </div>
                 )}
               </div>
@@ -155,17 +202,17 @@ const VeelgesteldeVragenComp = (props) => {
               <div className="veelgestelde-vragen-comp-faq4">
                 <div
                   onClick={() => setFaq4Visible(!faq4Visible)}
-                  className="veelgestelde-vragen-comp-trigger3"
+                  className="veelgestelde-vragen-comp-trigger4"
                 >
-                  <p className="veelgestelde-vragen-comp-faq2-question2 thq-body-large">
+                  <p className="veelgestelde-vragen-comp-faq2-question3 thq-body-large">
                     {props.faq4Question}
                   </p>
-                  <div className="veelgestelde-vragen-comp-icons-container3">
+                  <div className="veelgestelde-vragen-comp-icons-container4">
                     {!faq4Visible && (
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon12"
+                          className="veelgestelde-vragen-comp-icon22"
                         >
                           <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
                         </svg>
@@ -175,7 +222,7 @@ const VeelgesteldeVragenComp = (props) => {
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon14"
+                          className="veelgestelde-vragen-comp-icon24"
                         >
                           <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
                         </svg>
@@ -184,7 +231,7 @@ const VeelgesteldeVragenComp = (props) => {
                   </div>
                 </div>
                 {faq4Visible && (
-                  <div className="veelgestelde-vragen-comp-container13">
+                  <div className="veelgestelde-vragen-comp-container23">
                     <span className="thq-body-small">{props.faq4Content}</span>
                   </div>
                 )}
@@ -193,17 +240,17 @@ const VeelgesteldeVragenComp = (props) => {
               <div className="veelgestelde-vragen-comp-faq5">
                 <div
                   onClick={() => setFaq5Visible(!faq5Visible)}
-                  className="veelgestelde-vragen-comp-trigger4"
+                  className="veelgestelde-vragen-comp-trigger5"
                 >
-                  <p className="veelgestelde-vragen-comp-faq1-question1 thq-body-large">
+                  <p className="veelgestelde-vragen-comp-faq1-question2 thq-body-large">
                     {props.faq5Question}
                   </p>
-                  <div className="veelgestelde-vragen-comp-icons-container4">
+                  <div className="veelgestelde-vragen-comp-icons-container5">
                     {!faq5Visible && (
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon16"
+                          className="veelgestelde-vragen-comp-icon26"
                         >
                           <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
                         </svg>
@@ -213,7 +260,7 @@ const VeelgesteldeVragenComp = (props) => {
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon18"
+                          className="veelgestelde-vragen-comp-icon28"
                         >
                           <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
                         </svg>
@@ -222,8 +269,43 @@ const VeelgesteldeVragenComp = (props) => {
                   </div>
                 </div>
                 {faq5Visible && (
-                  <div className="veelgestelde-vragen-comp-container16">
-                    <span className="thq-body-small">{props.faq5Content}</span>
+                  <div className="veelgestelde-vragen-comp-container26">
+                    <span>
+                      {props.text ?? (
+                        <Fragment>
+                          <span className="veelgestelde-vragen-comp-text24 thq-body-small">
+                            <span>
+                              Een afspraak kan gemaakt worden via volgende link 
+                            </span>
+                            <a
+                              href="https://kinequick.corilus.be"
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="veelgestelde-vragen-comp-link2"
+                            >
+                              kinequick.corilus.be.
+                            </a>
+                            <br></br>
+                            <span>
+                              Of neem
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: ' ',
+                                }}
+                              />
+                            </span>
+                            <a
+                              href="/#contact"
+                              className="veelgestelde-vragen-comp-link3"
+                            >
+                              contact
+                            </a>
+                            <span> op met ons.</span>
+                            <br></br>
+                          </span>
+                        </Fragment>
+                      )}
+                    </span>
                   </div>
                 )}
               </div>
@@ -231,27 +313,27 @@ const VeelgesteldeVragenComp = (props) => {
               <div className="veelgestelde-vragen-comp-faq6">
                 <div
                   onClick={() => setFaq6Visible(!faq6Visible)}
-                  className="veelgestelde-vragen-comp-trigger5"
+                  className="veelgestelde-vragen-comp-trigger6"
                 >
-                  <p className="veelgestelde-vragen-comp-faq1-question2 thq-body-large">
-                    {props.faq6Question}
+                  <p className="veelgestelde-vragen-comp-faq1-question3 thq-body-large">
+                    {props.faq5Question1}
                   </p>
-                  <div className="veelgestelde-vragen-comp-icons-container5">
-                    {!faq6Visible && (
+                  <div className="veelgestelde-vragen-comp-icons-container6">
+                    {!faq5Visible && (
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon20"
+                          className="veelgestelde-vragen-comp-icon30"
                         >
                           <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
                         </svg>
                       </div>
                     )}
-                    {faq6Visible && (
+                    {faq5Visible && (
                       <div>
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="veelgestelde-vragen-comp-icon22"
+                          className="veelgestelde-vragen-comp-icon32"
                         >
                           <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
                         </svg>
@@ -260,8 +342,26 @@ const VeelgesteldeVragenComp = (props) => {
                   </div>
                 </div>
                 {faq6Visible && (
-                  <div className="veelgestelde-vragen-comp-container19">
-                    <span className="thq-body-small">{props.faq6Content}</span>
+                  <div className="veelgestelde-vragen-comp-container29">
+                    <span>
+                      {props.text3 ?? (
+                        <Fragment>
+                          <span className="veelgestelde-vragen-comp-text30 thq-body-small">
+                            <span>
+                              Annuleren kan gemakkelijk door te bellen of een
+                              mailtje te sturen. Gelieve dit wel
+                            </span>
+                            <br></br>
+                            <span>
+                              minstens 24u op voorhand te doen. Indien dit niet
+                              gebeurt, zijn wij genoodzaakt de
+                            </span>
+                            <br></br>
+                            <span>afspraak toch in rekening te brengen.</span>
+                          </span>
+                        </Fragment>
+                      )}
+                    </span>
                   </div>
                 )}
               </div>
@@ -288,7 +388,7 @@ const VeelgesteldeVragenComp = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .veelgestelde-vragen-comp-container {
+          .veelgestelde-vragen-comp-container10 {
             gap: var(--dl-space-space-threeunits);
             display: flex;
             align-self: stretch;
@@ -301,17 +401,15 @@ const VeelgesteldeVragenComp = (props) => {
             align-self: center;
             align-items: center;
           }
-          .veelgestelde-vragen-comp-text {
+          .veelgestelde-vragen-comp-text10 {
             text-align: center;
           }
-          .veelgestelde-vragen-comp-text1 {
+          .veelgestelde-vragen-comp-text11 {
             text-align: center;
           }
-          .veelgestelde-vragen-comp-container01 {
+          .veelgestelde-vragen-comp-container11 {
             display: flex;
             position: relative;
-          }
-          .veelgestelde-vragen-comp-book {
             text-decoration: none;
           }
           .veelgestelde-vragen-comp-list {
@@ -326,48 +424,6 @@ const VeelgesteldeVragenComp = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .veelgestelde-vragen-comp-trigger {
-            cursor: pointer;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-self: stretch;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .veelgestelde-vragen-comp-faq1-question {
-            font-style: normal;
-            text-align: center;
-            font-weight: 600;
-          }
-          .veelgestelde-vragen-comp-icons-container {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .veelgestelde-vragen-comp-icon {
-            width: 24px;
-            height: 24px;
-          }
-          .veelgestelde-vragen-comp-icon02 {
-            width: 24px;
-            height: 24px;
-          }
-          .veelgestelde-vragen-comp-container04 {
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-self: stretch;
-            align-items: flex-start;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .veelgestelde-vragen-comp-faq2 {
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
           .veelgestelde-vragen-comp-trigger1 {
             cursor: pointer;
             display: flex;
@@ -377,9 +433,9 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-faq2-question {
+          .veelgestelde-vragen-comp-faq1-question1 {
             font-style: normal;
-            text-align: center;
+            text-align: left;
             font-weight: 600;
           }
           .veelgestelde-vragen-comp-icons-container1 {
@@ -388,15 +444,15 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-icon04 {
+          .veelgestelde-vragen-comp-icon10 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-icon06 {
+          .veelgestelde-vragen-comp-icon12 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-container07 {
+          .veelgestelde-vragen-comp-container14 {
             display: flex;
             padding: var(--dl-space-space-unit);
             align-self: stretch;
@@ -404,7 +460,7 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-faq3 {
+          .veelgestelde-vragen-comp-faq2 {
             width: 100%;
             display: flex;
             align-items: flex-start;
@@ -430,15 +486,15 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-icon08 {
+          .veelgestelde-vragen-comp-icon14 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-icon10 {
+          .veelgestelde-vragen-comp-icon16 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-container10 {
+          .veelgestelde-vragen-comp-container17 {
             display: flex;
             padding: var(--dl-space-space-unit);
             align-self: stretch;
@@ -446,14 +502,14 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-faq4 {
+          .veelgestelde-vragen-comp-faq3 {
             width: 100%;
-            cursor: pointer;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
           .veelgestelde-vragen-comp-trigger3 {
+            cursor: pointer;
             display: flex;
             padding: var(--dl-space-space-unit);
             align-self: stretch;
@@ -472,15 +528,15 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-icon12 {
+          .veelgestelde-vragen-comp-icon18 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-icon14 {
+          .veelgestelde-vragen-comp-icon20 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-container13 {
+          .veelgestelde-vragen-comp-container20 {
             display: flex;
             padding: var(--dl-space-space-unit);
             align-self: stretch;
@@ -488,7 +544,7 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-faq5 {
+          .veelgestelde-vragen-comp-faq4 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -503,7 +559,7 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-faq1-question1 {
+          .veelgestelde-vragen-comp-faq2-question3 {
             font-style: normal;
             text-align: center;
             font-weight: 600;
@@ -514,15 +570,15 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-icon16 {
+          .veelgestelde-vragen-comp-icon22 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-icon18 {
+          .veelgestelde-vragen-comp-icon24 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-container16 {
+          .veelgestelde-vragen-comp-container23 {
             display: flex;
             padding: var(--dl-space-space-unit);
             align-self: stretch;
@@ -530,14 +586,14 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-faq6 {
+          .veelgestelde-vragen-comp-faq5 {
             width: 100%;
+            cursor: pointer;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
           .veelgestelde-vragen-comp-trigger5 {
-            cursor: pointer;
             display: flex;
             padding: var(--dl-space-space-unit);
             align-self: stretch;
@@ -556,15 +612,15 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-icon20 {
+          .veelgestelde-vragen-comp-icon26 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-icon22 {
+          .veelgestelde-vragen-comp-icon28 {
             width: 24px;
             height: 24px;
           }
-          .veelgestelde-vragen-comp-container19 {
+          .veelgestelde-vragen-comp-container26 {
             display: flex;
             padding: var(--dl-space-space-unit);
             align-self: stretch;
@@ -572,8 +628,69 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
+          .veelgestelde-vragen-comp-faq6 {
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .veelgestelde-vragen-comp-trigger6 {
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-self: stretch;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .veelgestelde-vragen-comp-faq1-question3 {
+            font-style: normal;
+            text-align: center;
+            font-weight: 600;
+          }
+          .veelgestelde-vragen-comp-icons-container6 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .veelgestelde-vragen-comp-icon30 {
+            width: 24px;
+            height: 24px;
+          }
+          .veelgestelde-vragen-comp-icon32 {
+            width: 24px;
+            height: 24px;
+          }
+          .veelgestelde-vragen-comp-container29 {
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-self: stretch;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .veelgestelde-vragen-comp-text24 {
+            display: inline-block;
+          }
+          .veelgestelde-vragen-comp-link2 {
+            text-decoration: underline;
+          }
+          .veelgestelde-vragen-comp-link3 {
+            text-decoration: underline;
+          }
+          .veelgestelde-vragen-comp-text30 {
+            display: inline-block;
+          }
+          .veelgestelde-vragen-comp-text36 {
+            display: inline-block;
+          }
+          .veelgestelde-vragen-comp-text49 {
+            display: inline-block;
+          }
+
           @media (max-width: 991px) {
-            .veelgestelde-vragen-comp-container {
+            .veelgestelde-vragen-comp-container10 {
               flex-direction: column;
             }
           }
@@ -583,6 +700,21 @@ const VeelgesteldeVragenComp = (props) => {
             }
             .veelgestelde-vragen-comp-book {
               width: 100%;
+            }
+            .veelgestelde-vragen-comp-faq2-question1 {
+              text-align: left;
+            }
+            .veelgestelde-vragen-comp-faq2-question2 {
+              text-align: left;
+            }
+            .veelgestelde-vragen-comp-faq2-question3 {
+              text-align: left;
+            }
+            .veelgestelde-vragen-comp-faq1-question2 {
+              text-align: left;
+            }
+            .veelgestelde-vragen-comp-faq1-question3 {
+              text-align: left;
             }
           }
         `}
@@ -596,41 +728,39 @@ VeelgesteldeVragenComp.defaultProps = {
   content1:
     'Heb je vragen over onze kine praktijk of wil je graag een afspraak maken? Aarzel niet om persoonlijk contact op te nemen. Wij beantwoorden zo snel mogelijk jouw vraag.',
   heading1: 'Veelgestelde vragen',
-  faq6Content: 'We zijn enkel actief in Genk.',
-  faq1Question: 'Wat breng ik mee voor de eerste behandeling?',
-  faq4Content: 'Je kan via de contacteer ons knop een afspraak maken bij ons.',
-  faq6Question: 'In welke steden zijn jullie actief?',
-  faq2Question: 'Heb ik een voorschrift nodig voor een behandeling?',
-  faq3Question: 'Doen jullie ook behandelingen aan huis?',
-  faq4Question: 'Hoe kan ik een afspraak maken?',
-  faq5Question: 'Hoe kan ik een afspraak annuleren?',
-  faq3Content:
-    'Nee, wegens de drukte in onze praktijk kunnen we geen huisbezoeken aanbieden, tenzij uitzonderlijk en in de nabijheid van de praktijk voor een kortstondige (post-operatieve) behandeling aan huis, om vervolgens in de praktijk verder te revalideren.',
+  faq5Question1: 'Hoe kan ik mijn afspraak annuleren?',
+  text: undefined,
+  faq1Question: 'Wat breng ik mee voor een eerste behandeling?',
+  faq4Content: 'Betalen kan met bancontact of via QR-code of overschrijving.',
+  text3: undefined,
+  text2: undefined,
+  faq2Question: 'Waar kan ik parkeren?',
+  faq3Question: 'Doen jullie huisbezoeken?',
+  faq4Question: 'Hoe kan ik betalen?',
+  text1: undefined,
+  faq5Question: 'Hoe kan ik een afspraak maken?',
   faq2Content:
     'Neen dat hoeft niet, maar dan wordt een behandeling kinesitherapie niet terugbetaald.',
-  faq1Content: 'Identiteitspapier, Voorschrift dokter en Handdoek',
   rootClassName: '',
-  faq5Content:
-    'Dit kan telefonisch +32 487/45 28 26 of online tot 24u voor de geplande afspraak.Niet nagekomen of laattijdig geannuleerde consultaties zullen aangerekend worden met het overeenkomstige tarief.',
 }
 
 VeelgesteldeVragenComp.propTypes = {
   action: PropTypes.string,
   content1: PropTypes.string,
   heading1: PropTypes.string,
-  faq6Content: PropTypes.string,
+  faq5Question1: PropTypes.string,
+  text: PropTypes.element,
   faq1Question: PropTypes.string,
   faq4Content: PropTypes.string,
-  faq6Question: PropTypes.string,
+  text3: PropTypes.element,
+  text2: PropTypes.element,
   faq2Question: PropTypes.string,
   faq3Question: PropTypes.string,
   faq4Question: PropTypes.string,
+  text1: PropTypes.element,
   faq5Question: PropTypes.string,
-  faq3Content: PropTypes.string,
   faq2Content: PropTypes.string,
-  faq1Content: PropTypes.string,
   rootClassName: PropTypes.string,
-  faq5Content: PropTypes.string,
 }
 
 export default VeelgesteldeVragenComp

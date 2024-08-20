@@ -14,17 +14,30 @@ const Contact = (props) => {
           </div>
           <div className="contact-content">
             <div className="contact-contacteer-ons-section">
-              <h2 className="thq-heading-1 contact-text">Contacteer ons</h2>
+              <h2 className="thq-heading-1 contact-text10">Contacteer ons</h2>
               <div className="contact-bel-ons">
-                <h4 className="thq-heading-2 contact-text1">Telefoon</h4>
-                <a href="tel:+32 487 45 28 26" className="contact-link">
-                  <p className="contact-text2 thq-body-large">
-                    +32 487 45 28 26
+                <h4 className="thq-heading-2 contact-text11">Telefoon</h4>
+                <a href="tel:+32 487 45 28 26" className="contact-link1">
+                  <p className="contact-text12 thq-body-large">
+                    Stijn  +32 487 45 28 26
+                  </p>
+                </a>
+                <a href="tel:+32 478 40 78 88" className="contact-link2">
+                  <p className="contact-text13 thq-body-large">
+                    <span>
+                      Arne
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span>+32 478 40 78 88</span>
                   </p>
                 </a>
               </div>
               <div className="contact-email-ons">
-                <h4 className="thq-heading-2 contact-text3">
+                <h4 className="thq-heading-2 contact-text16">
                   Email
                   <span
                     dangerouslySetInnerHTML={{
@@ -34,15 +47,15 @@ const Contact = (props) => {
                 </h4>
                 <a
                   href="mailto:info@mijnkine.be?subject="
-                  className="contact-link1"
+                  className="contact-link3"
                 >
-                  <p className="contact-text4 thq-body-large">
+                  <p className="contact-text17 thq-body-large">
                     info@mijnkine.be
                   </p>
                 </a>
               </div>
               <div className="contact-kom-langs">
-                <h4 className="thq-heading-2 contact-text5">Kom langs</h4>
+                <h4 className="thq-heading-2 contact-text18">Kom langs</h4>
                 <p className="thq-body-large">
                   Hospitaalstraat 1/bus 2, 3600 Genk
                 </p>
@@ -95,10 +108,16 @@ const Contact = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .contact-link {
+          .contact-link1 {
             display: contents;
           }
-          .contact-text2 {
+          .contact-text12 {
+            text-decoration: none;
+          }
+          .contact-link2 {
+            display: contents;
+          }
+          .contact-text13 {
             text-decoration: none;
           }
           .contact-email-ons {
@@ -108,10 +127,10 @@ const Contact = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .contact-link1 {
+          .contact-link3 {
             display: contents;
           }
-          .contact-text4 {
+          .contact-text17 {
             text-decoration: none;
           }
           .contact-kom-langs {
@@ -129,16 +148,16 @@ const Contact = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .contact-text {
+            .contact-text10 {
               font-size: xx-large;
             }
-            .contact-text1 {
+            .contact-text11 {
               font-size: x-large;
             }
-            .contact-text3 {
+            .contact-text16 {
               font-size: x-large;
             }
-            .contact-text5 {
+            .contact-text18 {
               font-size: x-large;
             }
           }

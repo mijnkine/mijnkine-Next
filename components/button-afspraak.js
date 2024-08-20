@@ -34,7 +34,7 @@ const ButtonAfspraak = (props) => {
             object-fit: cover;
           }
 
-          .button-afspraak-root-class-name5 {
+          .button-afspraakroot-class-name5 {
             fill: var(--dl-color-gray-black);
             color: var(--dl-color-gray-black);
             align-self: flex-start;

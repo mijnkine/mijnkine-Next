@@ -6,7 +6,7 @@ const ButtonBack = (props) => {
   return (
     <>
       <div className={`button-back-container ${props.rootClassName} `}>
-        <button type="button" className="button-back-button button">
+        <button id="back-btn" type="button" className="button-back-button">
           <img
             alt={props.imageAlt}
             src={props.imageSrc}
@@ -36,47 +36,50 @@ const ButtonBack = (props) => {
             height: var(--dl-size-size-medium);
             object-fit: cover;
           }
-          .button-back-root-class-name {
+          .button-backroot-class-name {
             width: auto;
             height: auto;
             margin-left: 0px;
           }
-          .button-back-root-class-name1 {
+          .button-backroot-class-name1 {
             width: auto;
             height: auto;
             margin-left: 0px;
           }
-          .button-back-root-class-name2 {
+          .button-backroot-class-name2 {
             width: auto;
             height: auto;
             margin-left: 0px;
           }
-          .button-back-root-class-name3 {
+          .button-backroot-class-name3 {
             width: auto;
             height: auto;
             margin-left: 0px;
           }
-          .button-back-root-class-name4 {
+          .button-backroot-class-name4 {
+            top: 0px;
+            left: 80px;
+            width: auto;
+            height: auto;
+            position: static;
+            margin-left: 0px;
+          }
+          .button-backroot-class-name5 {
             width: auto;
             height: auto;
             margin-left: 0px;
           }
-          .button-back-root-class-name5 {
+          .button-backroot-class-name6 {
             width: auto;
             height: auto;
             margin-left: 0px;
           }
-          .button-back-root-class-name6 {
+          .button-backroot-class-name7 {
             width: auto;
             height: auto;
             margin-left: 0px;
           }
-          .button-back-root-class-name7 {
-            width: auto;
-            height: auto;
-            margin-left: 0px;
-          }
-          .button-back-root-class-name8 {
+          .button-backroot-class-name8 {
             width: auto;
             height: auto;
             margin-left: 0px;
@@ -86,31 +89,31 @@ const ButtonBack = (props) => {
               width: var(--dl-size-size-small);
               height: var(--dl-size-size-small);
             }
-            .button-back-root-class-name {
+            .button-backroot-class-name {
               margin-left: 0px;
             }
-            .button-back-root-class-name1 {
+            .button-backroot-class-name1 {
               margin-left: 0px;
             }
-            .button-back-root-class-name2 {
+            .button-backroot-class-name2 {
               margin-left: 0px;
             }
-            .button-back-root-class-name3 {
+            .button-backroot-class-name3 {
               margin-left: 0px;
             }
-            .button-back-root-class-name4 {
+            .button-backroot-class-name4 {
               margin-left: 0px;
             }
-            .button-back-root-class-name5 {
+            .button-backroot-class-name5 {
               margin-left: 0px;
             }
-            .button-back-root-class-name6 {
+            .button-backroot-class-name6 {
               margin-left: 0px;
             }
-            .button-back-root-class-name7 {
+            .button-backroot-class-name7 {
               margin-left: 0px;
             }
-            .button-back-root-class-name8 {
+            .button-backroot-class-name8 {
               margin-left: 0px;
             }
           }

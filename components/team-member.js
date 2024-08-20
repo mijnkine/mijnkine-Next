@@ -12,8 +12,8 @@ const TeamMember = (props) => {
           className="team-member-image"
         />
         <div className="team-member-heading">
-          <h2 className="team-member-text">{props.heading}</h2>
-          <p className="team-member-text1">{props.text}</p>
+          <h2 className="team-member-text1">{props.heading}</h2>
+          <p className="team-member-text2">{props.text}</p>
         </div>
       </div>
       <style jsx>
@@ -39,7 +39,7 @@ const TeamMember = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .team-member-text {
+          .team-member-text1 {
             width: 100%;
             font-size: 24px;
             max-width: 270px;
@@ -47,7 +47,7 @@ const TeamMember = (props) => {
             text-align: center;
             font-weight: 600;
           }
-          .team-member-text1 {
+          .team-member-text2 {
             width: 100%;
             font-size: 14px;
             max-width: 240px;
@@ -55,12 +55,12 @@ const TeamMember = (props) => {
             line-height: 21px;
           }
           @media (max-width: 767px) {
-            .team-member-text {
+            .team-member-text1 {
               font-size: 16px;
               max-width: 200px;
               line-height: 24px;
             }
-            .team-member-text1 {
+            .team-member-text2 {
               font-size: 12px;
               max-width: 200px;
               line-height: 18px;

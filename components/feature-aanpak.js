@@ -16,10 +16,10 @@ const FeatureAanpak = (props) => {
               className="thq-img-ratio-16-9"
             />
           </div>
-          <div className="feature-aanpak-content">
+          <div className="feature-aanpak-content1">
             <div className="feature-aanpak-section-title">
-              <div className="feature-aanpak-content1">
-                <h2 className="thq-heading-2 feature-aanpak-text">
+              <div className="feature-aanpak-content2">
+                <h2 className="thq-heading-2 feature-aanpak-text1">
                   {props.aanpakFeatureTitle}
                 </h2>
                 <p className="thq-body-large">{props.aanpakFeatureText}</p>
@@ -49,7 +49,7 @@ const FeatureAanpak = (props) => {
             position: relative;
             align-items: center;
           }
-          .feature-aanpak-content {
+          .feature-aanpak-content1 {
             gap: var(--dl-space-space-oneandhalfunits);
             flex: 1;
             display: flex;
@@ -63,7 +63,7 @@ const FeatureAanpak = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .feature-aanpak-content1 {
+          .feature-aanpak-content2 {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
             align-self: stretch;
@@ -83,16 +83,16 @@ const FeatureAanpak = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .feature-aanpak-content {
+            .feature-aanpak-content1 {
               width: 100%;
             }
             .feature-aanpak-section-title {
               width: auto;
             }
-            .feature-aanpak-content1 {
+            .feature-aanpak-content2 {
               width: auto;
             }
-            .feature-aanpak-text {
+            .feature-aanpak-text1 {
               word-break: break-all;
             }
             .feature-aanpak-actions {

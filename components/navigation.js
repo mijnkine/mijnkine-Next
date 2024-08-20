@@ -13,7 +13,7 @@ const Navigation = (props) => {
       <div className={`navigation-container ${props.rootClassName} `}>
         <header data-thq="thq-navbar" className="navigation-navbar-interactive">
           <Link href="/">
-            <a className="navigation-link">
+            <a className="navigation-link5">
               <img
                 alt={props.logoAlt}
                 src={props.logoSrc}
@@ -22,25 +22,29 @@ const Navigation = (props) => {
             </a>
           </Link>
           <div data-thq="thq-navbar-nav" className="navigation-desktop-menu">
-            <nav className="navigation-links">
-              <a href="#aanpak">Onze aanpak</a>
-              <a href="#team">Team</a>
+            <nav className="navigation-links1">
+              <a href="#aanpak" className="navigation-link11 thq-body-small">
+                Onze werking
+              </a>
+              <a href="#team" className="navigation-link21 thq-body-small">
+                Team
+              </a>
               <Link href="/veelgestelde-vragen">
-                <a className="navigation-link1 thq-body-small navigation-link1 thq-body-small">
+                <a className="navigation-link6 thq-body-small">
                   <span>Veelgestelde vragen</span>
                   <br></br>
                 </a>
               </Link>
-              <a href="#contact" className="navigation-link4 thq-body-small">
+              <a href="#contact" className="navigation-link41 thq-body-small">
                 Contacteer ons
               </a>
             </nav>
-            <div className="navigation-buttons">
-              <ButtonAfspraak rootClassName="button-afspraak-root-class-name1"></ButtonAfspraak>
+            <div className="navigation-buttons1">
+              <ButtonAfspraak rootClassName="button-afspraakroot-class-name1"></ButtonAfspraak>
             </div>
           </div>
           <div data-thq="thq-burger-menu" className="navigation-burger-menu">
-            <svg viewBox="0 0 1024 1024" className="navigation-icon">
+            <svg viewBox="0 0 1024 1024" className="navigation-icon10">
               <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
             </svg>
           </div>
@@ -56,38 +60,38 @@ const Navigation = (props) => {
                   data-thq="thq-close-menu"
                   className="navigation-close-menu"
                 >
-                  <svg viewBox="0 0 1024 1024" className="navigation-icon02">
+                  <svg viewBox="0 0 1024 1024" className="navigation-icon12">
                     <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                   </svg>
                 </div>
               </div>
-              <nav className="navigation-links1">
+              <nav className="navigation-links2">
                 <a
                   href="#aanpak"
-                  className="navigation-link11 thq-body-small thq-link"
+                  className="navigation-link12 thq-body-small thq-link"
                 >
                   Onze aanpak
                 </a>
                 <a
                   href="#team"
-                  className="navigation-link21 thq-body-small thq-link"
+                  className="navigation-link22 thq-body-small thq-link"
                 >
                   Team
                 </a>
                 <Link href="/veelgestelde-vragen">
-                  <a className="navigation-link2 thq-body-small navigation-link2 thq-body-small thq-link">
+                  <a className="navigation-link7 thq-body-small thq-link">
                     Veelgestelde vragen
                   </a>
                 </Link>
                 <a
                   href="#contact"
-                  className="navigation-link41 thq-body-small thq-link"
+                  className="navigation-link42 thq-body-small thq-link"
                 >
                   Contacteer ons
                 </a>
               </nav>
-              <div className="navigation-buttons1">
-                <ButtonAfspraak rootClassName="button-afspraak-root-class-name2"></ButtonAfspraak>
+              <div className="navigation-buttons2">
+                <ButtonAfspraak rootClassName="button-afspraakroot-class-name2"></ButtonAfspraak>
               </div>
             </div>
             <div className="navigation-icon-group">
@@ -133,7 +137,7 @@ const Navigation = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
           }
-          .navigation-link {
+          .navigation-link5 {
             display: contents;
           }
           .navigation-image1 {
@@ -145,7 +149,7 @@ const Navigation = (props) => {
             display: flex;
             justify-content: space-between;
           }
-          .navigation-links {
+          .navigation-links1 {
             gap: var(--dl-space-space-twounits);
             flex: 1;
             display: flex;
@@ -154,19 +158,19 @@ const Navigation = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .navigation-link1 {
+          .navigation-link11 {
             text-decoration: none;
           }
-          .navigation-link2 {
+          .navigation-link21 {
             text-decoration: none;
           }
-          .navigation-link1 {
+          .navigation-link6 {
             text-decoration: none;
           }
-          .navigation-link4 {
+          .navigation-link41 {
             text-decoration: none;
           }
-          .navigation-buttons {
+          .navigation-buttons1 {
             gap: var(--dl-space-space-twounits);
             display: flex;
             align-items: center;
@@ -175,7 +179,7 @@ const Navigation = (props) => {
           .navigation-burger-menu {
             display: none;
           }
-          .navigation-icon {
+          .navigation-icon10 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
           }
@@ -211,11 +215,11 @@ const Navigation = (props) => {
             align-items: center;
             justify-content: center;
           }
-          .navigation-icon02 {
+          .navigation-icon12 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
           }
-          .navigation-links1 {
+          .navigation-links2 {
             gap: var(--dl-space-space-unit);
             flex: 0 0 auto;
             width: 100%;
@@ -223,19 +227,19 @@ const Navigation = (props) => {
             align-self: flex-start;
             flex-direction: column;
           }
-          .navigation-link11 {
+          .navigation-link12 {
             text-decoration: none;
           }
-          .navigation-link21 {
+          .navigation-link22 {
             text-decoration: none;
           }
-          .navigation-link2 {
+          .navigation-link7 {
             text-decoration: none;
           }
-          .navigation-link41 {
+          .navigation-link42 {
             text-decoration: none;
           }
-          .navigation-buttons1 {
+          .navigation-buttons2 {
             gap: var(--dl-space-space-twounits);
             display: flex;
             margin-top: var(--dl-space-space-twounits);
@@ -267,7 +271,7 @@ const Navigation = (props) => {
             .navigation-navbar-interactive {
               padding: var(--dl-space-space-unit);
             }
-            .navigation-icon {
+            .navigation-icon10 {
               width: var(--dl-size-size-small);
               height: var(--dl-size-size-small);
             }

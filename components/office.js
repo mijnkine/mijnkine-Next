@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
@@ -8,16 +8,16 @@ const Office = (props) => {
   return (
     <>
       <div id="praktijk" className="office-office">
-        <h1 className="office-text">
+        <h1 className="office-text1">
           {props.heading ?? (
-            <fragment>
-              <span className="office-text1">Onze praktijk</span>
-            </fragment>
+            <Fragment>
+              <h1 className="office-text2">Onze praktijk</h1>
+            </Fragment>
           )}
         </h1>
         <div className="office-separator"></div>
-        <div className="office-container">
-          <div className="office-container1">
+        <div className="office-container1">
+          <div className="office-container2">
             <FeatureCard4
               title="Klimrek"
               rootClassName="rootClassName1"
@@ -58,7 +58,7 @@ const Office = (props) => {
             height: 2px;
             background-color: var(--dl-color-gray-500);
           }
-          .office-container {
+          .office-container1 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -67,7 +67,7 @@ const Office = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .office-container1 {
+          .office-container2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
           }
@@ -80,7 +80,7 @@ const Office = (props) => {
             border-radius: var(--dl-radius-radius-round);
             object-position: left;
           }
-          .office-text1 {
+          .office-text2 {
             display: inline-block;
             font-size: 3rem;
             margin-bottom: var(--dl-space-space-twounits);
@@ -90,7 +90,7 @@ const Office = (props) => {
               height: auto;
               align-items: center;
             }
-            .office-container {
+            .office-container1 {
               flex-direction: column-reverse;
             }
             .office-image {
@@ -106,10 +106,10 @@ const Office = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .office-text {
+            .office-text1 {
               text-align: center;
             }
-            .office-text1 {
+            .office-text2 {
               text-align: center;
             }
           }
@@ -120,7 +120,7 @@ const Office = (props) => {
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .office-container1 {
+            .office-container2 {
               grid-template-columns: 1fr;
             }
             .office-image {

@@ -9,10 +9,10 @@ const AfspraakBanner = (props) => {
   return (
     <>
       <div
-        className={`afspraak-banner-container thq-section-padding ${props.rootClassName} `}
+        className={`afspraak-banner-container1 thq-section-padding ${props.rootClassName} `}
       >
         <div className="afspraak-banner-max-width thq-section-max-width">
-          <div className="afspraak-banner-container1 thq-flex-row">
+          <div className="afspraak-banner-container2 thq-flex-row">
             <div className="afspraak-banner-div">
               <lottie-player
                 src="https://lottie.host/5bd5aa06-2193-433e-bee1-8fae50318ede/DeJ1OgS4g2.json"
@@ -22,18 +22,18 @@ const AfspraakBanner = (props) => {
               ></lottie-player>
             </div>
             <div className="afspraak-banner-column">
-              <span className="thq-heading-2 afspraak-banner-text">
+              <span className="thq-heading-2 afspraak-banner-text1">
                 {props.heading1}
               </span>
               <div className="afspraak-banner-actions">
                 <a href="/#contact" className="afspraak-banner-link">
-                  <div className="afspraak-banner-container2">
+                  <div className="afspraak-banner-container3">
                     <button className="button button-main afspraak-banner-book">
                       <span>{props.text}</span>
                     </button>
                   </div>
                 </a>
-                <ButtonAfspraak rootClassName="button-afspraak-root-class-name7"></ButtonAfspraak>
+                <ButtonAfspraak rootClassName="button-afspraakroot-class-name7"></ButtonAfspraak>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ const AfspraakBanner = (props) => {
       </div>
       <style jsx>
         {`
-          .afspraak-banner-container {
+          .afspraak-banner-container1 {
             width: 100%;
             height: auto;
             display: flex;
@@ -62,7 +62,7 @@ const AfspraakBanner = (props) => {
             flex-shrink: 0;
             flex-direction: column;
           }
-          .afspraak-banner-container1 {
+          .afspraak-banner-container2 {
             align-self: stretch;
             align-items: center;
             flex-shrink: 0;
@@ -86,7 +86,7 @@ const AfspraakBanner = (props) => {
           .afspraak-banner-link {
             display: contents;
           }
-          .afspraak-banner-container2 {
+          .afspraak-banner-container3 {
             display: flex;
             position: relative;
             text-decoration: none;
@@ -98,7 +98,7 @@ const AfspraakBanner = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .afspraak-banner-text {
+            .afspraak-banner-text1 {
               font-size: larger;
             }
             .afspraak-banner-book {

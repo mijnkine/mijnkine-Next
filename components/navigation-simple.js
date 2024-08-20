@@ -10,13 +10,13 @@ const NavigationSimple = (props) => {
   const [link5DropdownVisible, setLink5DropdownVisible] = useState(false)
   return (
     <>
-      <div className={`navigation-simple-container ${props.rootClassName} `}>
+      <div className={`navigation-simple-container1 ${props.rootClassName} `}>
         <header
           data-thq="thq-navbar"
           className="navigation-simple-navbar-interactive"
         >
           <Link href="/">
-            <a className="navigation-simple-link">
+            <a className="navigation-simple-link5">
               <img
                 alt={props.logoAlt}
                 src={props.logoSrc}
@@ -28,15 +28,15 @@ const NavigationSimple = (props) => {
             data-thq="thq-navbar-nav"
             className="navigation-simple-desktop-menu"
           >
-            <div className="navigation-simple-buttons">
-              <ButtonAfspraak rootClassName="button-afspraak-root-class-name3"></ButtonAfspraak>
+            <div className="navigation-simple-buttons1">
+              <ButtonAfspraak rootClassName="button-afspraakroot-class-name3"></ButtonAfspraak>
             </div>
           </div>
           <div
             data-thq="thq-burger-menu"
             className="navigation-simple-burger-menu"
           >
-            <svg viewBox="0 0 1024 1024" className="navigation-simple-icon">
+            <svg viewBox="0 0 1024 1024" className="navigation-simple-icon10">
               <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
             </svg>
           </div>
@@ -57,14 +57,19 @@ const NavigationSimple = (props) => {
                 >
                   <svg
                     viewBox="0 0 1024 1024"
-                    className="navigation-simple-icon02"
+                    className="navigation-simple-icon12"
                   >
                     <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                   </svg>
                 </div>
               </div>
               <nav className="navigation-simple-links">
-                <a href="/#aanpak">{props.link1}</a>
+                <a
+                  href="/#aanpak"
+                  className="navigation-simple-link1 thq-body-small thq-link"
+                >
+                  {props.link1}
+                </a>
                 <a
                   href="/#team"
                   target="_blank"
@@ -74,7 +79,7 @@ const NavigationSimple = (props) => {
                   {props.link2}
                 </a>
                 <Link href="/veelgestelde-vragen">
-                  <a className="navigation-simple-link1 thq-body-small thq-link navigation-simple-link1 thq-body-small thq-link">
+                  <a className="navigation-simple-link6 thq-body-small thq-link">
                     {props.link3}
                   </a>
                 </Link>
@@ -85,8 +90,8 @@ const NavigationSimple = (props) => {
                   {props.link4}
                 </a>
               </nav>
-              <div className="navigation-simple-buttons1">
-                <ButtonAfspraak rootClassName="button-afspraak-root-class-name4"></ButtonAfspraak>
+              <div className="navigation-simple-buttons2">
+                <ButtonAfspraak rootClassName="button-afspraakroot-class-name4"></ButtonAfspraak>
               </div>
             </div>
             <div className="navigation-simple-icon-group">
@@ -114,13 +119,13 @@ const NavigationSimple = (props) => {
         {link5DropdownVisible && (
           <div
             onClick={() => setLink5DropdownVisible(false)}
-            className="navigation-simple-container1"
+            className="navigation-simple-container2"
           ></div>
         )}
       </div>
       <style jsx>
         {`
-          .navigation-simple-container {
+          .navigation-simple-container1 {
             width: 100%;
             display: flex;
             position: relative;
@@ -138,7 +143,7 @@ const NavigationSimple = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
           }
-          .navigation-simple-link {
+          .navigation-simple-link5 {
             display: contents;
           }
           .navigation-simple-image1 {
@@ -150,7 +155,7 @@ const NavigationSimple = (props) => {
             display: flex;
             justify-content: flex-end;
           }
-          .navigation-simple-buttons {
+          .navigation-simple-buttons1 {
             gap: var(--dl-space-space-twounits);
             display: flex;
             align-items: center;
@@ -159,7 +164,7 @@ const NavigationSimple = (props) => {
           .navigation-simple-burger-menu {
             display: none;
           }
-          .navigation-simple-icon {
+          .navigation-simple-icon10 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
           }
@@ -195,7 +200,7 @@ const NavigationSimple = (props) => {
             align-items: center;
             justify-content: center;
           }
-          .navigation-simple-icon02 {
+          .navigation-simple-icon12 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
           }
@@ -213,13 +218,13 @@ const NavigationSimple = (props) => {
           .navigation-simple-link2 {
             text-decoration: none;
           }
-          .navigation-simple-link1 {
+          .navigation-simple-link6 {
             text-decoration: none;
           }
           .navigation-simple-link4 {
             text-decoration: none;
           }
-          .navigation-simple-buttons1 {
+          .navigation-simple-buttons2 {
             gap: var(--dl-space-space-twounits);
             display: flex;
             margin-top: var(--dl-space-space-twounits);
@@ -230,7 +235,7 @@ const NavigationSimple = (props) => {
             gap: var(--dl-space-space-twounits);
             display: flex;
           }
-          .navigation-simple-container1 {
+          .navigation-simple-container2 {
             top: 0px;
             width: 100%;
             height: 100%;
@@ -258,7 +263,7 @@ const NavigationSimple = (props) => {
             .navigation-simple-navbar-interactive {
               padding: var(--dl-space-space-unit);
             }
-            .navigation-simple-icon {
+            .navigation-simple-icon10 {
               width: var(--dl-size-size-small);
               height: var(--dl-size-size-small);
             }
