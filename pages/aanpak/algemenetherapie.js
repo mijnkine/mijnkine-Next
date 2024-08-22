@@ -62,7 +62,7 @@ const AanpakAlgemenetherapie = (props) => {
           </span>
           <div className="aanpak-algemenetherapie-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-algemenetherapie-link2"
@@ -75,7 +75,7 @@ const AanpakAlgemenetherapie = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-algemenetherapie-link3"
@@ -150,7 +150,6 @@ const AanpakAlgemenetherapie = (props) => {
           .aanpak-algemenetherapie-icon1 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -160,7 +159,6 @@ const AanpakAlgemenetherapie = (props) => {
           .aanpak-algemenetherapie-icon3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

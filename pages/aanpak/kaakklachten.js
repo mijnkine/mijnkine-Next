@@ -54,7 +54,7 @@ const AanpakKaakklachten = (props) => {
           </span>
           <div className="aanpak-kaakklachten-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-kaakklachten-link2"
@@ -67,7 +67,7 @@ const AanpakKaakklachten = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-kaakklachten-link3"
@@ -141,7 +141,6 @@ const AanpakKaakklachten = (props) => {
           .aanpak-kaakklachten-icon1 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -151,7 +150,6 @@ const AanpakKaakklachten = (props) => {
           .aanpak-kaakklachten-icon3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

@@ -62,7 +62,7 @@ const AanpakTaping = (props) => {
           </span>
           <div className="aanpak-taping-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-taping-link2"
@@ -75,7 +75,7 @@ const AanpakTaping = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-taping-link3"
@@ -149,7 +149,6 @@ const AanpakTaping = (props) => {
           .aanpak-taping-icon1 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -159,7 +158,6 @@ const AanpakTaping = (props) => {
           .aanpak-taping-icon3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

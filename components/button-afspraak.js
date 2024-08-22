@@ -7,7 +7,7 @@ const ButtonAfspraak = (props) => {
     <>
       <div className={`button-afspraak-container ${props.rootClassName} `}>
         <a
-          href="https://kinequick.corilus.be/"
+          href="https://afspraak.mijnkine.be/"
           target="_blank"
           rel="noreferrer noopener"
           className="button-afspraak-book button button-main"

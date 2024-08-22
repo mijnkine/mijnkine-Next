@@ -40,15 +40,28 @@ const VeelgesteldeVragen = (props) => {
               <Fragment>
                 <span className="veelgestelde-vragen-text10 thq-body-small">
                   <span>
-                    Een afspraak kan gemaakt worden via volgende link 
+                    Een afspraak kan gemaakt worden via onze
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
                   </span>
                   <a
-                    href="https://kinequick.corilus.be"
+                    href="https://www.q-top.be/online-planner-v2/NL/?root=kq55870"
                     target="_blank"
                     rel="noreferrer noopener"
                     className="veelgestelde-vragen-link2"
                   >
-                    kinequick.corilus.be.
+                    afsprakenplanner
+                  </a>
+                  <a
+                    href="https://kinequick.corilus.be"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="veelgestelde-vragen-link3"
+                  >
+                    .
                   </a>
                   <br></br>
                   <span>
@@ -59,7 +72,7 @@ const VeelgesteldeVragen = (props) => {
                       }}
                     />
                   </span>
-                  <a href="/#contact" className="veelgestelde-vragen-link3">
+                  <a href="/#contact" className="veelgestelde-vragen-link4">
                     contact
                   </a>
                   <span> op met ons.</span>
@@ -134,10 +147,10 @@ const VeelgesteldeVragen = (props) => {
           </span>
           <div className="veelgestelde-vragen-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
-              className="veelgestelde-vragen-link4"
+              className="veelgestelde-vragen-link5"
             >
               <svg
                 viewBox="0 0 877.7142857142857 1024"
@@ -147,10 +160,10 @@ const VeelgesteldeVragen = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
-              className="veelgestelde-vragen-link5"
+              className="veelgestelde-vragen-link6"
             >
               <svg
                 viewBox="0 0 602.2582857142856 1024"
@@ -203,6 +216,9 @@ const VeelgesteldeVragen = (props) => {
           .veelgestelde-vragen-link3 {
             text-decoration: underline;
           }
+          .veelgestelde-vragen-link4 {
+            text-decoration: underline;
+          }
           .veelgestelde-vragen-text16 {
             display: inline-block;
           }
@@ -234,23 +250,21 @@ const VeelgesteldeVragen = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-link4 {
+          .veelgestelde-vragen-link5 {
             display: contents;
           }
           .veelgestelde-vragen-icon1 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
-          .veelgestelde-vragen-link5 {
+          .veelgestelde-vragen-link6 {
             display: contents;
           }
           .veelgestelde-vragen-icon3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

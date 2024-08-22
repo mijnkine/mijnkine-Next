@@ -66,7 +66,7 @@ const Home = (props) => {
                     />
                   </div>
                   <p className="home-text10">
-                    hospitaalstraat 1/bus 2 , 3600 genk
+                    Hospitaalstraat 1/bus 2 , 3600 Genk
                   </p>
                   <div className="home-divider1"></div>
                 </div>
@@ -380,7 +380,7 @@ const Home = (props) => {
           <span className="home-text39">© 2024 - webdesign by Jan Pecquet</span>
           <div className="home-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
               className="home-link21"
@@ -390,7 +390,7 @@ const Home = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
               className="home-link22"
@@ -890,7 +890,6 @@ const Home = (props) => {
           .home-icon4 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -900,7 +899,6 @@ const Home = (props) => {
           .home-icon6 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

@@ -61,7 +61,7 @@ const AanpakSportrevalidatie = (props) => {
           </span>
           <div className="aanpak-sportrevalidatie-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-sportrevalidatie-link2"
@@ -74,7 +74,7 @@ const AanpakSportrevalidatie = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
               className="aanpak-sportrevalidatie-link3"
@@ -148,7 +148,6 @@ const AanpakSportrevalidatie = (props) => {
           .aanpak-sportrevalidatie-icon1 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -158,7 +157,6 @@ const AanpakSportrevalidatie = (props) => {
           .aanpak-sportrevalidatie-icon3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

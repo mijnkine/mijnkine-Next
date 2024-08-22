@@ -150,7 +150,7 @@ const TeamArne = (props) => {
           </span>
           <div className="team-arne-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
               className="team-arne-link2"
@@ -163,7 +163,7 @@ const TeamArne = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
               className="team-arne-link3"
@@ -286,7 +286,6 @@ const TeamArne = (props) => {
           .team-arne-icon1 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -296,7 +295,6 @@ const TeamArne = (props) => {
           .team-arne-icon3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

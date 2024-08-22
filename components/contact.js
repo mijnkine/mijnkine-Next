@@ -14,9 +14,9 @@ const Contact = (props) => {
           </div>
           <div className="contact-content">
             <div className="contact-contacteer-ons-section">
-              <h2 className="thq-heading-1 contact-text10">Contacteer ons</h2>
+              <h2 className="contact-text10 thq-heading-1">Contacteer ons</h2>
               <div className="contact-bel-ons">
-                <h4 className="thq-heading-2 contact-text11">Telefoon</h4>
+                <h4 className="contact-text11 thq-heading-2">Telefoon</h4>
                 <a href="tel:+32 487 45 28 26" className="contact-link1">
                   <p className="contact-text12 thq-body-large">
                     Stijn  +32 487 45 28 26
@@ -37,7 +37,7 @@ const Contact = (props) => {
                 </a>
               </div>
               <div className="contact-email-ons">
-                <h4 className="thq-heading-2 contact-text16">
+                <h4 className="contact-text16 thq-heading-2">
                   Email
                   <span
                     dangerouslySetInnerHTML={{
@@ -55,7 +55,7 @@ const Contact = (props) => {
                 </a>
               </div>
               <div className="contact-kom-langs">
-                <h4 className="thq-heading-2 contact-text18">Kom langs</h4>
+                <h4 className="contact-text18 thq-heading-2">Kom langs</h4>
                 <p className="thq-body-large">
                   Hospitaalstraat 1/bus 2, 3600 Genk
                 </p>
@@ -101,12 +101,18 @@ const Contact = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
+          .contact-text10 {
+            font-family: 'Poppins';
+          }
           .contact-bel-ons {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
             align-self: stretch;
             align-items: flex-start;
             flex-direction: column;
+          }
+          .contact-text11 {
+            font-family: 'Poppins';
           }
           .contact-link1 {
             display: contents;
@@ -127,6 +133,9 @@ const Contact = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
+          .contact-text16 {
+            font-family: 'Poppins';
+          }
           .contact-link3 {
             display: contents;
           }
@@ -139,6 +148,9 @@ const Contact = (props) => {
             align-self: stretch;
             align-items: flex-start;
             flex-direction: column;
+          }
+          .contact-text18 {
+            font-family: 'Poppins';
           }
           @media (max-width: 991px) {
             .contact-max-width {

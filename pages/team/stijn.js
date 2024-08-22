@@ -135,7 +135,7 @@ const TeamStijn = (props) => {
           </span>
           <div className="team-stijn-icon-group">
             <a
-              href="https://www.instagram.com/stijn.jans.9/"
+              href="https://www.instagram.com/mijnkine"
               target="_blank"
               rel="noreferrer noopener"
               className="team-stijn-link2"
@@ -148,7 +148,7 @@ const TeamStijn = (props) => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/stijn.jans.9"
+              href="https://www.facebook.com/MijnKine/"
               target="_blank"
               rel="noreferrer noopener"
               className="team-stijn-link3"
@@ -268,7 +268,6 @@ const TeamStijn = (props) => {
           .team-stijn-icon1 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -278,7 +277,6 @@ const TeamStijn = (props) => {
           .team-stijn-icon3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
-            display: none;
             text-decoration: none;
           }
           @media (max-width: 991px) {

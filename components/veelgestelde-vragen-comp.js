@@ -23,7 +23,7 @@ const VeelgesteldeVragenComp = (props) => {
               <p className="veelgestelde-vragen-comp-text11 thq-body-large">
                 {props.content1}
               </p>
-              <a href="/#contact" target="_blank" rel="noreferrer noopener">
+              <a href="/#contact">
                 <div className="veelgestelde-vragen-comp-container11">
                   <button className="button button-main veelgestelde-vragen-comp-book">
                     <span>{props.action}</span>
@@ -275,15 +275,28 @@ const VeelgesteldeVragenComp = (props) => {
                         <Fragment>
                           <span className="veelgestelde-vragen-comp-text24 thq-body-small">
                             <span>
-                              Een afspraak kan gemaakt worden via volgende link 
+                              Een afspraak kan gemaakt worden via onze
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: ' ',
+                                }}
+                              />
                             </span>
                             <a
-                              href="https://kinequick.corilus.be"
+                              href="https://www.q-top.be/online-planner-v2/NL/?root=kq55870"
                               target="_blank"
                               rel="noreferrer noopener"
                               className="veelgestelde-vragen-comp-link2"
                             >
-                              kinequick.corilus.be.
+                              afsprakenplanner
+                            </a>
+                            <a
+                              href="https://kinequick.corilus.be"
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="veelgestelde-vragen-comp-link3"
+                            >
+                              .
                             </a>
                             <br></br>
                             <span>
@@ -296,7 +309,7 @@ const VeelgesteldeVragenComp = (props) => {
                             </span>
                             <a
                               href="/#contact"
-                              className="veelgestelde-vragen-comp-link3"
+                              className="veelgestelde-vragen-comp-link4"
                             >
                               contact
                             </a>
@@ -677,6 +690,9 @@ const VeelgesteldeVragenComp = (props) => {
             text-decoration: underline;
           }
           .veelgestelde-vragen-comp-link3 {
+            text-decoration: underline;
+          }
+          .veelgestelde-vragen-comp-link4 {
             text-decoration: underline;
           }
           .veelgestelde-vragen-comp-text30 {
