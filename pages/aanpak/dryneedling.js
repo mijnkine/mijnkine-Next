@@ -12,7 +12,15 @@ const AanpakDryneedling = (props) => {
       <div className="aanpak-dryneedling-container">
         <Head>
           <title>Dry needling</title>
+          <meta
+            name="description"
+            content="Mijn Kine: Uw expert in kinesitherapie in Genk. Persoonlijke behandelingen voor revalidatie, blessurepreventie en pijnverlichting. Maak vandaag een afspraak!"
+          />
           <meta property="og:title" content="Dry needling" />
+          <meta
+            property="og:description"
+            content="Mijn Kine: Uw expert in kinesitherapie in Genk. Persoonlijke behandelingen voor revalidatie, blessurepreventie en pijnverlichting. Maak vandaag een afspraak!"
+          />
           <meta
             property="og:image"
             content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/ea578cad-184d-4f31-bb77-f954be0b4f25/357596ce-0351-4b4f-b47b-1cf4da894cc7?org_if_sml=1&amp;q=80&amp;force_format=original"

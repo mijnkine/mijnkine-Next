@@ -7,7 +7,7 @@ const Contact = (props) => {
         <div className="contact-max-width thq-section-max-width">
           <div className="contact-map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.5426249229695!2d5.5043416769739935!3d50.96916004988017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0d92d83596359%3A0xa17fcc70ca144727!2sHospitaalstraat%201%2Fbus%202%2C%203600%20Genk!5e0!3m2!1sen!2sbe!4v1722319273146!5m2!1sen!2sbe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5894.087432996505!2d5.5072857712008725!3d50.965289178446426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0d94372055dcd%3A0xae6a6940a8f1bead!2sMijn%20Kine!5e0!3m2!1sen!2sbe!4v1724848569942!5m2!1sen!2sbe"
               title="Map"
               className="contact-iframe thq-img-ratio-16-9"
             ></iframe>

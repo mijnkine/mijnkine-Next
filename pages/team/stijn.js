@@ -15,6 +15,10 @@ const TeamStijn = (props) => {
           <meta name="description" content="Kinesist" />
           <meta property="og:title" content="Stijn Jans" />
           <meta property="og:description" content="Kinesist" />
+          <meta
+            property="og:image"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/ea578cad-184d-4f31-bb77-f954be0b4f25/cbc0d713-0698-4930-97d2-2a353e79045a?org_if_sml=1&amp;force_format=original"
+          />
         </Head>
         <NavigationSimple rootClassName="navigation-simpleroot-class-name7"></NavigationSimple>
         <div className="team-stijn-back">
