@@ -7,6 +7,7 @@ import ButtonAfspraak from '../components/button-afspraak'
 import AanpakCard from '../components/aanpak-card'
 import AanpakPreview from '../components/aanpak-preview'
 import TeamMember from '../components/team-member'
+import Gallery from '../components/gallery'
 import Contact from '../components/contact'
 
 const Home = (props) => {
@@ -189,10 +190,10 @@ const Home = (props) => {
                   <div className="home-practice-wrapper1">
                     <AanpakPreview
                       imageAlt="algemene aanpak"
-                      imageSrc="/Aanpak/aanpak_algemene-200h.jpeg"
+                      imageSrc="/Aanpak/aanpak_manueel-200h.jpeg"
                       cardTitle={
                         <Fragment>
-                          <span className="home-text26">Manuele therapie</span>
+                          <span className="home-text26">Manuele Therapie</span>
                         </Fragment>
                       }
                       description={
@@ -213,7 +214,7 @@ const Home = (props) => {
                 <a>
                   <div className="home-practice-wrapper2">
                     <AanpakPreview
-                      imageSrc="/Aanpak/aanpak_manueel-300h.jpeg"
+                      imageSrc="/Aanpak/aanpak_algemene-200h.jpeg"
                       cardTitle={
                         <Fragment>
                           <span className="home-text28">Algemene Therapie</span>
@@ -237,7 +238,7 @@ const Home = (props) => {
                 <a>
                   <div className="home-practice-wrapper3">
                     <AanpakPreview
-                      imageSrc="/Aanpak/aanpak_kaakklachten-300h.jpeg"
+                      imageSrc="/Aanpak/aanpak_kaakklachten-200h.jpeg"
                       cardTitle={
                         <Fragment>
                           <span className="home-text30">Kaakklachten</span>
@@ -249,11 +250,6 @@ const Home = (props) => {
                             Temporomandibulaire therapie richt zich op het
                             behandelen van klachten aan het kaakgewricht en de
                             omliggende spieren.
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: ' ',
-                              }}
-                            />
                           </span>
                         </Fragment>
                       }
@@ -267,10 +263,10 @@ const Home = (props) => {
                   <div className="home-practice-wrapper4">
                     <AanpakPreview
                       title="Dry needling"
-                      imageSrc="/Aanpak/aanpak_dryneedling-300h.jpeg"
+                      imageSrc="/Aanpak/aanpak_dryneedling-200h.jpeg"
                       cardTitle={
                         <Fragment>
-                          <span className="home-text32">Dry Needling</span>
+                          <span className="home-text32">Dry needling</span>
                         </Fragment>
                       }
                       description={
@@ -294,12 +290,15 @@ const Home = (props) => {
                       imageSrc="/Aanpak/aanpak_taping-300h.jpeg"
                       cardTitle={
                         <Fragment>
-                          <span className="home-text34">Taping</span>
+                          <span className="home-text34">
+                            <span>Taping</span>
+                            <br></br>
+                          </span>
                         </Fragment>
                       }
                       description={
                         <Fragment>
-                          <span className="home-text35">
+                          <span className="home-text37">
                             Taping is een techniek waarbij elastische of
                             niet-elastische tape op de huid wordt aangebracht om
                             spieren, gewrichten of ligamenten te ondersteunen,
@@ -316,14 +315,15 @@ const Home = (props) => {
                 <a>
                   <div className="home-practice-wrapper6">
                     <AanpakPreview
+                      imageSrc="/Aanpak/aanpak_sport-200h.jpeg"
                       cardTitle={
                         <Fragment>
-                          <span className="home-text36">Sportrevalidatie</span>
+                          <span className="home-text38">Sportrevalidatie</span>
                         </Fragment>
                       }
                       description={
                         <Fragment>
-                          <span className="home-text37">
+                          <span className="home-text39">
                             Doormiddel van oefentherapie de patiënt terug laten
                             functioneren op zijn voorgaande niveau en hem
                             ondersteunen richting performance enhancement.
@@ -340,7 +340,7 @@ const Home = (props) => {
         </section>
         <section id="team" className="home-team">
           <div className="home-heading6">
-            <h2 className="home-text38">Ondek ons team</h2>
+            <h2 className="home-text40">Ondek ons team</h2>
           </div>
           <div className="home-list">
             <div data-teleport="doctors" className="home-doctors">
@@ -368,6 +368,9 @@ const Home = (props) => {
             </div>
           </div>
         </section>
+        <div className="home-gallery">
+          <Gallery rootClassName="galleryroot-class-name"></Gallery>
+        </div>
         <div id="contact" className="home-contact">
           <Contact></Contact>
         </div>
@@ -377,7 +380,7 @@ const Home = (props) => {
             src="/Branding/logo-1500h.jpeg"
             className="home-image3"
           />
-          <span className="home-text39">© 2024 - webdesign by Jan Pecquet</span>
+          <span className="home-text41">© 2024 - webdesign by Jan Pecquet</span>
           <div className="home-icon-group">
             <a
               href="https://www.instagram.com/mijnkine"
@@ -703,12 +706,10 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-text26 {
-            color: var(--dl-color-theme-neutral-light);
+            color: rgb(255, 255, 255);
             display: inline-block;
-            position: relative;
-            font-size: 32px;
+            font-size: 28px;
             font-style: normal;
-            text-align: center;
             font-weight: 700;
             text-transform: capitalize;
           }
@@ -721,84 +722,81 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-text28 {
-            color: var(--dl-color-theme-neutral-light);
+            color: rgb(255, 255, 255);
             display: inline-block;
-            position: relative;
-            font-size: 32px;
+            font-size: 28px;
             font-style: normal;
-            text-align: center;
             font-weight: 700;
             text-transform: capitalize;
           }
           .home-text29 {
             display: inline-block;
+            font-weight: 400;
           }
           .home-practice-wrapper3 {
             cursor: pointer;
             text-decoration: none;
           }
           .home-text30 {
-            color: var(--dl-color-theme-neutral-light);
+            color: rgb(255, 255, 255);
             display: inline-block;
-            position: relative;
-            font-size: 32px;
+            font-size: 28px;
             font-style: normal;
-            text-align: center;
             font-weight: 700;
             text-transform: capitalize;
           }
           .home-text31 {
             display: inline-block;
+            font-weight: 400;
           }
           .home-practice-wrapper4 {
             cursor: pointer;
             text-decoration: none;
           }
           .home-text32 {
-            color: var(--dl-color-theme-neutral-light);
+            color: rgb(255, 255, 255);
             display: inline-block;
-            position: relative;
-            font-size: 32px;
+            font-size: 28px;
             font-style: normal;
-            text-align: center;
             font-weight: 700;
             text-transform: capitalize;
           }
           .home-text33 {
             display: inline-block;
+            font-weight: 400;
           }
           .home-practice-wrapper5 {
             cursor: pointer;
             text-decoration: none;
           }
           .home-text34 {
-            color: var(--dl-color-theme-neutral-light);
+            fill: var(--dl-color-theme-neutral-dark);
+            color: rgb(255, 255, 255);
             display: inline-block;
+            z-index: 999;
             position: relative;
-            font-size: 32px;
-            font-style: normal;
-            text-align: center;
-            font-weight: 700;
-            text-transform: capitalize;
-          }
-          .home-text35 {
-            display: inline-block;
-          }
-          .home-practice-wrapper6 {
-            cursor: pointer;
-            text-decoration: none;
-          }
-          .home-text36 {
-            color: var(--dl-color-theme-neutral-light);
-            display: inline-block;
-            position: relative;
-            font-size: 32px;
+            font-size: 28px;
             font-style: normal;
             text-align: center;
             font-weight: 700;
             text-transform: capitalize;
           }
           .home-text37 {
+            display: inline-block;
+          }
+          .home-practice-wrapper6 {
+            cursor: pointer;
+            text-decoration: none;
+          }
+          .home-text38 {
+            color: rgb(255, 255, 255);
+            display: inline-block;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+          .home-text39 {
             display: inline-block;
           }
           .home-team {
@@ -819,7 +817,7 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text38 {
+          .home-text40 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
@@ -853,6 +851,13 @@ const Home = (props) => {
           }
           .home-component21 {
             text-decoration: none;
+          }
+          .home-gallery {
+            flex: 0 0 auto;
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
           }
           .home-contact {
             flex: 0 0 auto;
@@ -1078,7 +1083,7 @@ const Home = (props) => {
               gap: var(--dl-space-space-unit);
               padding-right: 0px;
             }
-            .home-text38 {
+            .home-text40 {
               font-size: 24px;
             }
             .home-list {
@@ -1093,7 +1098,7 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .home-text39 {
+            .home-text41 {
               text-align: center;
               margin-left: var(--dl-space-space-unit);
               margin-right: var(--dl-space-space-unit);
@@ -1106,6 +1111,10 @@ const Home = (props) => {
             .home-header1 {
               max-width: 80%;
             }
+            .home-gallery {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
             .home-footer {
               padding: var(--dl-space-space-unit);
               flex-direction: column;
@@ -1113,7 +1122,7 @@ const Home = (props) => {
             .home-image3 {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .home-text39 {
+            .home-text41 {
               margin-left: 0px;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-unit);

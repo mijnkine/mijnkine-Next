@@ -630,6 +630,123 @@
   z-index: -1;
   transform: scaleX(1);
 }
+.center1 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.center {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.center4 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.aanpakstyle1 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.aanpakstyle {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.center3 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.Aanpak {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.aanpakstyle3 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.center2 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.eee {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.ad {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.titleCenter {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.aanpakstyle2 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: capitalize;
+  text-decoration: none;
+}
 .Content {
   font-size: 16px;
   font-family: Poppins;
@@ -667,6 +784,9 @@
   }
   .thq-section-padding {
     padding: var(--dl-space-space-threeunits);
+  }
+  .thq-img-ratio-4-3 {
+    width: 80%;
   }
   .thq-flex-column {
     gap: var(--dl-space-space-oneandhalfunits);

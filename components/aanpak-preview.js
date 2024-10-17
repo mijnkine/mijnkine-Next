@@ -12,13 +12,13 @@ const AanpakPreview = (props) => {
             src={props.imageSrc}
             className="aanpak-preview-image"
           />
-          <p>
+          <h2>
             {props.cardTitle ?? (
               <Fragment>
-                <p className="aanpak-preview-text2">Text</p>
+                <h2 className="aanpak-preview-text2">test</h2>
               </Fragment>
             )}
-          </p>
+          </h2>
         </div>
         <label>
           {props.description ?? (
@@ -49,36 +49,45 @@ const AanpakPreview = (props) => {
             height: var(--dl-size-size-xlarge);
             display: flex;
             position: relative;
+            transition: 0.3s;
             align-items: center;
             margin-bottom: var(--dl-space-space-unit);
             justify-content: center;
+          }
+          .aanpak-preview-container2:hover {
+            opacity: 0.95;
           }
           .aanpak-preview-image {
             width: 100%;
             height: 100%;
             opacity: 0.7;
+            z-index: -1;
             position: absolute;
             object-fit: cover;
             transition: 0.3s;
             border-radius: 36px;
           }
           .aanpak-preview-image:hover {
-            opacity: 0.3;
+            opacity: 0.5;
           }
           .aanpak-preview-text2 {
-            fill: var(--dl-color-theme-neutral-dark);
-            color: var(--dl-color-theme-neutral-dark);
+            color: rgb(255, 255, 255);
             display: inline-block;
-            position: relative;
-            font-size: 32px;
+            font-size: 30px;
+            align-self: center;
             font-style: normal;
-            text-align: center;
             font-weight: 700;
+            align-content: center;
             text-transform: capitalize;
           }
           .aanpak-preview-text3 {
             display: inline-block;
             font-weight: 400;
+          }
+
+          .aanpak-previewroot-class-name5 {
+            fill: var(--dl-color-gray-black);
+            color: var(--dl-color-gray-black);
           }
         `}
       </style>

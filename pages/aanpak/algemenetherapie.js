@@ -44,7 +44,7 @@ const AanpakAlgemenetherapie = (props) => {
           <FeatureAanpak
             rootClassName="feature-aanpakroot-class-name3"
             aanpakFeatureText="Algemene kinesitherapie bestaat uit traditionele kinesitherapeutische behandelingen van diverse aandoeningen van het bewegingsstelsel. Dit kan ten gevolge van een ongeval, een ziekte, een operatie, een sportletsel of een ander opgelopen lichamelijk trauma. Kinesitherapie betekent letterlijk genezen door te bewegen. Een kinesitherapeutische behandeling is hoofdzakelijk gericht tot het verminderen van de pijn en het verbeteren van de mobiliteit bij allerlei soorten spier-, pees- en gewrichtsletsels met het oog op een betere levenskwaliteit. De therapeut gebruikt manuele technieken (mobilisaties, oscillaties, fricties, rek…) en specifieke oefentherapie om de oorzaak van het probleem in het bewegingsapparaat op te lossen en te voorkomen dat de huidige klachten in de toekomst terugkomen."
-            aanpakFeatureTitle="Algemene kinesitherapie"
+            aanpakFeatureTitle="Algemene therapie"
             aanpakFeatureImageAlt="foto algemene kinesitherapie"
             aanpakFeatureImageSrc="/Aanpak/aanpak_algemene-1400w.jpeg"
             aanpakFeatureBreadcrumb="Aanpak &gt; Dry Needling"
