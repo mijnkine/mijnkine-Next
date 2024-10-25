@@ -59,6 +59,7 @@ const AanpakPreview = (props) => {
           }
           .aanpak-preview-image {
             width: 100%;
+            filter: brightness(0.5);
             height: 100%;
             opacity: 0.7;
             z-index: -1;
