@@ -2,6 +2,8 @@ import React, { Fragment } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
+import { useTranslations } from 'next-intl'
+
 import NavigationSimple from '../components/navigation-simple'
 import ButtonBack from '../components/button-back'
 import VeelgesteldeVragenComp from '../components/veelgestelde-vragen-comp'
@@ -12,12 +14,15 @@ const VeelgesteldeVragen = (props) => {
     <>
       <div className="veelgestelde-vragen-container1">
         <Head>
-          <title>Veelgestelde vragen - Mijn kine</title>
+          <title>Veelgestelde vragen - Mijn Kine Genk</title>
           <meta
             name="description"
             content="Bekijk onze FAQ-pagina voor antwoorden op veelgestelde vragen over kinesitherapie, behandelingen en revalidatie. Vind snel de informatie die je zoekt!"
           />
-          <meta property="og:title" content="Veelgestelde vragen - Mijn kine" />
+          <meta
+            property="og:title"
+            content="Veelgestelde vragen - Mijn Kine Genk"
+          />
           <meta
             property="og:description"
             content="Bekijk onze FAQ-pagina voor antwoorden op veelgestelde vragen over kinesitherapie, behandelingen en revalidatie. Vind snel de informatie die je zoekt!"
@@ -42,7 +47,7 @@ const VeelgesteldeVragen = (props) => {
           <VeelgesteldeVragenComp
             text={
               <Fragment>
-                <span className="veelgestelde-vragen-text10 thq-body-small">
+                <span className="veelgestelde-vragen-text10">
                   <span>
                     Een afspraak kan gemaakt worden via onze
                     <span
@@ -86,7 +91,7 @@ const VeelgesteldeVragen = (props) => {
             }
             text1={
               <Fragment>
-                <span className="veelgestelde-vragen-text16 thq-body-small">
+                <span className="veelgestelde-vragen-text16">
                   <span>
                     Indien nodig doen wij huisbezoeken. Indien je mobiliteit het
                     toelaat, raden we toch aan
@@ -101,7 +106,7 @@ const VeelgesteldeVragen = (props) => {
             }
             text2={
               <Fragment>
-                <span className="veelgestelde-vragen-text20 thq-body-small">
+                <span className="veelgestelde-vragen-text20">
                   <span>- Voorschrift van de dokter</span>
                   <br></br>
                   <span>- Verslagen, beeldvorming,...</span>
@@ -121,7 +126,7 @@ const VeelgesteldeVragen = (props) => {
             }
             text3={
               <Fragment>
-                <span className="veelgestelde-vragen-text33 thq-body-small">
+                <span className="veelgestelde-vragen-text33">
                   <span>
                     Annuleren kan gemakkelijk door te bellen of een mailtje te
                     sturen. Gelieve dit wel
@@ -309,3 +314,14 @@ const VeelgesteldeVragen = (props) => {
 }
 
 export default VeelgesteldeVragen
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

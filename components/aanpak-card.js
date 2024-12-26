@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
+import { useTranslations } from 'next-intl'
 
 const AanpakCard = (props) => {
   return (
@@ -12,14 +13,14 @@ const AanpakCard = (props) => {
           loading="eager"
           className="aanpak-card-image"
         />
-        <h3>
+        <h3 className="aanpak-card-text1">
           {props.cardTitle ?? (
             <Fragment>
-              <h3 className="aanpak-card-text3">Persoonlijke aanpak</h3>
+              <span className="aanpak-card-text3">Persoonlijke aanpak</span>
             </Fragment>
           )}
         </h3>
-        <span>
+        <span className="aanpak-card-text2">
           {props.cardDescription ?? (
             <Fragment>
               <span className="aanpak-card-text4">
@@ -44,23 +45,27 @@ const AanpakCard = (props) => {
             width: var(--dl-size-size-small);
             object-fit: cover;
           }
-          .aanpak-card-text3 {
+          .aanpak-card-text1 {
             fill: var(--dl-color-primary-main);
             color: var(--dl-color-primary-main);
-            display: inline-block;
             margin-top: var(--dl-space-space-halfunit);
             text-align: center;
             margin-bottom: var(--dl-space-space-halfunit);
           }
-          .aanpak-card-text4 {
+          .aanpak-card-text2 {
             width: var(--dl-size-size-large);
-            display: inline-block;
             font-size: 10px;
             text-align: center;
           }
+          .aanpak-card-text3 {
+            display: inline-block;
+          }
+          .aanpak-card-text4 {
+            display: inline-block;
+          }
 
           @media (max-width: 767px) {
-            .aanpak-card-text4 {
+            .aanpak-card-text2 {
               width: auto;
             }
           }

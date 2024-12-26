@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
+import { useTranslations } from 'next-intl'
 
 const AanpakPreview = (props) => {
   return (
@@ -12,23 +13,23 @@ const AanpakPreview = (props) => {
             src={props.imageSrc}
             className="aanpak-preview-image"
           />
-          <h2>
+          <h2 className="aanpak-preview-text1">
             {props.cardTitle ?? (
               <Fragment>
-                <h2 className="aanpak-preview-text2">test</h2>
+                <span className="aanpak-preview-text2">test</span>
               </Fragment>
             )}
           </h2>
         </div>
-        <label>
+        <label className="aanpak-preview-description">
           {props.description ?? (
             <Fragment>
-              <label className="aanpak-preview-text3">
+              <span className="aanpak-preview-text3">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book.
-              </label>
+              </span>
             </Fragment>
           )}
         </label>
@@ -71,9 +72,8 @@ const AanpakPreview = (props) => {
           .aanpak-preview-image:hover {
             opacity: 0.5;
           }
-          .aanpak-preview-text2 {
+          .aanpak-preview-text1 {
             color: rgb(255, 255, 255);
-            display: inline-block;
             font-size: 30px;
             align-self: center;
             font-style: normal;
@@ -81,9 +81,14 @@ const AanpakPreview = (props) => {
             align-content: center;
             text-transform: capitalize;
           }
+          .aanpak-preview-description {
+            font-weight: 400;
+          }
+          .aanpak-preview-text2 {
+            display: inline-block;
+          }
           .aanpak-preview-text3 {
             display: inline-block;
-            font-weight: 400;
           }
 
           .aanpak-previewroot-class-name5 {

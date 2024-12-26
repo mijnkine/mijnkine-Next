@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
+import { useTranslations } from 'next-intl'
 
 const Practice = (props) => {
   return (

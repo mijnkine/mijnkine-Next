@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import { useTranslations } from 'next-intl'
+
 import NavigationSimple from '../../components/navigation-simple'
 import ButtonBack from '../../components/button-back'
 import FeatureAanpak from '../../components/feature-aanpak'
@@ -11,12 +13,12 @@ const AanpakTaping = (props) => {
     <>
       <div className="aanpak-taping-container">
         <Head>
-          <title>Taping</title>
+          <title>Taping - Mijn Kine Genk</title>
           <meta
             name="description"
             content="Met behulp van kinesiotaping proberen we het eigen herstelproces van het lichaam te stimuleren."
           />
-          <meta property="og:title" content="Taping" />
+          <meta property="og:title" content="Taping - Mijn Kine Genk" />
           <meta
             property="og:description"
             content="Met behulp van kinesiotaping proberen we het eigen herstelproces van het lichaam te stimuleren."
@@ -198,3 +200,14 @@ const AanpakTaping = (props) => {
 }
 
 export default AanpakTaping
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

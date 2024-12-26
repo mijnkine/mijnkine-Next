@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 
 import PropTypes from 'prop-types'
+import { useTranslations } from 'next-intl'
 
 import ButtonAfspraak from './button-afspraak'
 

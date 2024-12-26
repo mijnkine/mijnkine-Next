@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import { useTranslations } from 'next-intl'
+
 import NavigationSimple from '../../components/navigation-simple'
 import ButtonBack from '../../components/button-back'
 import TeamMember from '../../components/team-member'
@@ -11,10 +13,16 @@ const TeamArne = (props) => {
     <>
       <div className="team-arne-container1">
         <Head>
-          <title>Arne Budo</title>
-          <meta name="description" content="Kinesist" />
-          <meta property="og:title" content="Arne Budo" />
-          <meta property="og:description" content="Kinesist" />
+          <title>Arne Budo - Kinesist in Genk</title>
+          <meta
+            name="description"
+            content="Zoek je een kinesist in Genk? Arne Budo biedt ervaren kinesitherapie voor diverse klachten. Herstel sneller en efficiënter met onze persoonlijke aanpak."
+          />
+          <meta property="og:title" content="Arne Budo - Kinesist in Genk" />
+          <meta
+            property="og:description"
+            content="Zoek je een kinesist in Genk? Arne Budo biedt ervaren kinesitherapie voor diverse klachten. Herstel sneller en efficiënter met onze persoonlijke aanpak."
+          />
           <meta
             property="og:image"
             content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/ea578cad-184d-4f31-bb77-f954be0b4f25/cbc0d713-0698-4930-97d2-2a353e79045a?org_if_sml=1&amp;force_format=original"
@@ -63,6 +71,9 @@ const TeamArne = (props) => {
                         <span>•⁠ ⁠⁠Kaakklachten</span>
                         <br></br>
                         <span>•⁠ ⁠⁠Dry needling</span>
+                        <br></br>
+                        <span>•⁠ ⁠⁠Craniale behandelingen</span>
+                        <br></br>
                       </p>
                     </li>
                     <li className="team-arne-li3 list-item">
@@ -78,17 +89,13 @@ const TeamArne = (props) => {
                         <span>
                           Door zijn interesse binnen de sport staat hij klaar om
                           sporters te begeleiden, zowel preventief als na een
-                          blessure.
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
+                          blessure. Zo heeft hij stage gedaan bij voetbalclub
+                          STVV en heeft hij Heers VV begeleid als kinesist van
+                          de eerste ploeg. Eveneens ligt de
                         </span>
-                        <br></br>
                         <span>
-                          Net zoals revalidatie na orthopedische ingrepen hem
-                          nauw aan het hart liggen.
+                           revalidatie na orthopedische ingrepen hem nauw aan
+                          het hart (kruisband, meniscus, prothese,...).
                         </span>
                         <br></br>
                         <br></br>
@@ -104,8 +111,8 @@ const TeamArne = (props) => {
                         <br></br>
                         <span>
                           Gecombineerd met manuele therapie kan je bij hem ook
-                          terecht voor dry needling en behandelingen van de
-                          kaak.
+                          terecht voor dry needling en behandelingen van de kaak
+                          alsook voor craniale behandelingen bij hoofdpijn.
                           <span
                             dangerouslySetInnerHTML={{
                               __html: ' ',
@@ -128,7 +135,7 @@ const TeamArne = (props) => {
                         </span>
                         <br></br>
                         <br></br>
-                        <span className="team-arne-text41">
+                        <span className="team-arne-text43">
                           Gedeconventioneerd
                         </span>
                         <br></br>
@@ -149,7 +156,7 @@ const TeamArne = (props) => {
             src="/Branding/logo-1500h.jpeg"
             className="team-arne-image"
           />
-          <span className="team-arne-text43">
+          <span className="team-arne-text45">
             © 2024 - webdesign by Jan Pecquet
           </span>
           <div className="team-arne-icon-group">
@@ -252,7 +259,7 @@ const TeamArne = (props) => {
             list-style-image: none;
             list-style-position: outside;
           }
-          .team-arne-text41 {
+          .team-arne-text43 {
             font-weight: 400;
           }
           .team-arne-content2 {
@@ -315,7 +322,7 @@ const TeamArne = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .team-arne-text43 {
+            .team-arne-text45 {
               text-align: center;
               margin-left: var(--dl-space-space-unit);
               margin-right: var(--dl-space-space-unit);
@@ -332,7 +339,7 @@ const TeamArne = (props) => {
             .team-arne-image {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .team-arne-text43 {
+            .team-arne-text45 {
               margin-left: 0px;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-unit);
@@ -345,3 +352,14 @@ const TeamArne = (props) => {
 }
 
 export default TeamArne
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

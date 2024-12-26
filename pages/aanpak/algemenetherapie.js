@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import { useTranslations } from 'next-intl'
+
 import NavigationSimple from '../../components/navigation-simple'
 import ButtonBack from '../../components/button-back'
 import FeatureAanpak from '../../components/feature-aanpak'
@@ -11,12 +13,15 @@ const AanpakAlgemenetherapie = (props) => {
     <>
       <div className="aanpak-algemenetherapie-container">
         <Head>
-          <title>Algemene Kinesitherapie</title>
+          <title>Algemene Kinesitherapie - Mijn Kine Genk</title>
           <meta
             name="description"
             content="Algemene kinesitherapie bestaat uit traditionele kinesitherapeutische behandelingen van diverse aandoeningen van het bewegingsstelsel."
           />
-          <meta property="og:title" content="Algemene Kinesitherapie" />
+          <meta
+            property="og:title"
+            content="Algemene Kinesitherapie - Mijn Kine Genk"
+          />
           <meta
             property="og:description"
             content="Algemene kinesitherapie bestaat uit traditionele kinesitherapeutische behandelingen van diverse aandoeningen van het bewegingsstelsel."
@@ -199,3 +204,14 @@ const AanpakAlgemenetherapie = (props) => {
 }
 
 export default AanpakAlgemenetherapie
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

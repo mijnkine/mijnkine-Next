@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 
 import PropTypes from 'prop-types'
+import { useTranslations } from 'next-intl'
 
 import ButtonAfspraak from './button-afspraak'
 

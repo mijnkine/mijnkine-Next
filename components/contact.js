@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useTranslations } from 'next-intl'
+
 const Contact = (props) => {
   return (
     <>

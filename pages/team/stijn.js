@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import { useTranslations } from 'next-intl'
+
 import NavigationSimple from '../../components/navigation-simple'
 import ButtonBack from '../../components/button-back'
 import TeamMember from '../../components/team-member'
@@ -11,10 +13,16 @@ const TeamStijn = (props) => {
     <>
       <div className="team-stijn-container1">
         <Head>
-          <title>Stijn Jans</title>
-          <meta name="description" content="Kinesist" />
-          <meta property="og:title" content="Stijn Jans" />
-          <meta property="og:description" content="Kinesist" />
+          <title>Stijn Jans - Kinesist in Genk</title>
+          <meta
+            name="description"
+            content="Zoek je een kinesist in Genk? Stijn Jans biedt ervaren kinesitherapie voor diverse klachten. Herstel sneller en efficiënter met onze persoonlijke aanpak."
+          />
+          <meta property="og:title" content="Stijn Jans - Kinesist in Genk" />
+          <meta
+            property="og:description"
+            content="Zoek je een kinesist in Genk? Stijn Jans biedt ervaren kinesitherapie voor diverse klachten. Herstel sneller en efficiënter met onze persoonlijke aanpak."
+          />
           <meta
             property="og:image"
             content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/ea578cad-184d-4f31-bb77-f954be0b4f25/cbc0d713-0698-4930-97d2-2a353e79045a?org_if_sml=1&amp;force_format=original"
@@ -332,3 +340,14 @@ const TeamStijn = (props) => {
 }
 
 export default TeamStijn
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

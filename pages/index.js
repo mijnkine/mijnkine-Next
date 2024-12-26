@@ -2,6 +2,8 @@ import React, { Fragment } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
+import { useTranslations } from 'next-intl'
+
 import Navigation from '../components/navigation'
 import ButtonAfspraak from '../components/button-afspraak'
 import AanpakCard from '../components/aanpak-card'
@@ -15,15 +17,18 @@ const Home = (props) => {
     <>
       <div className="home-container1">
         <Head>
-          <title>Mijn kine</title>
+          <title>Mijn kine - Kinesitherapie in Genk</title>
           <meta
             name="description"
-            content="Bij mijnkine krijg je persoonlijke kinesitherapie en revalidatie op maat. Behandel je klachten effectief met onze deskundige, vriendelijke therapeuten."
+            content="Mijn Kine: Uw expert in kinesitherapie in Genk. Persoonlijke behandelingen voor revalidatie, blessurepreventie en pijnverlichting. Maak vandaag een afspraak!"
           />
-          <meta property="og:title" content="Mijn kine" />
+          <meta
+            property="og:title"
+            content="Mijn kine - Kinesitherapie in Genk"
+          />
           <meta
             property="og:description"
-            content="Bij mijnkine krijg je persoonlijke kinesitherapie en revalidatie op maat. Behandel je klachten effectief met onze deskundige, vriendelijke therapeuten."
+            content="Mijn Kine: Uw expert in kinesitherapie in Genk. Persoonlijke behandelingen voor revalidatie, blessurepreventie en pijnverlichting. Maak vandaag een afspraak!"
           />
           <meta
             property="og:image"
@@ -641,43 +646,22 @@ const Home = (props) => {
             grid-template-columns: repeat(3, 1fr);
           }
           .home-text14 {
-            fill: var(--dl-color-primary-main);
-            color: var(--dl-color-primary-main);
             display: inline-block;
-            margin-top: var(--dl-space-space-halfunit);
-            margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text17 {
-            width: var(--dl-size-size-large);
             display: inline-block;
-            font-size: 10px;
           }
           .home-text20 {
-            fill: var(--dl-color-primary-main);
-            color: var(--dl-color-primary-main);
             display: inline-block;
-            margin-top: var(--dl-space-space-halfunit);
-            margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text23 {
-            width: var(--dl-size-size-large);
             display: inline-block;
-            font-size: 10px;
-            text-align: center;
           }
           .home-text24 {
-            fill: var(--dl-color-primary-main);
-            color: var(--dl-color-primary-main);
             display: inline-block;
-            margin-top: var(--dl-space-space-halfunit);
-            text-align: center;
-            margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text25 {
-            width: var(--dl-size-size-large);
             display: inline-block;
-            font-size: 10px;
-            text-align: center;
           }
           .home-container2 {
             width: 100%;
@@ -706,80 +690,47 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-text26 {
-            color: rgb(255, 255, 255);
             display: inline-block;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            text-transform: capitalize;
           }
           .home-text27 {
             display: inline-block;
-            font-weight: 400;
           }
           .home-practice-wrapper2 {
             cursor: pointer;
             text-decoration: none;
           }
           .home-text28 {
-            color: rgb(255, 255, 255);
             display: inline-block;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            text-transform: capitalize;
           }
           .home-text29 {
             display: inline-block;
-            font-weight: 400;
           }
           .home-practice-wrapper3 {
             cursor: pointer;
             text-decoration: none;
           }
           .home-text30 {
-            color: rgb(255, 255, 255);
             display: inline-block;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            text-transform: capitalize;
           }
           .home-text31 {
             display: inline-block;
-            font-weight: 400;
           }
           .home-practice-wrapper4 {
             cursor: pointer;
             text-decoration: none;
           }
           .home-text32 {
-            color: rgb(255, 255, 255);
             display: inline-block;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            text-transform: capitalize;
           }
           .home-text33 {
             display: inline-block;
-            font-weight: 400;
           }
           .home-practice-wrapper5 {
             cursor: pointer;
             text-decoration: none;
           }
           .home-text34 {
-            fill: var(--dl-color-theme-neutral-dark);
-            color: rgb(255, 255, 255);
             display: inline-block;
-            z-index: 999;
-            position: relative;
-            font-size: 28px;
-            font-style: normal;
-            text-align: center;
-            font-weight: 700;
-            text-transform: capitalize;
           }
           .home-text37 {
             display: inline-block;
@@ -789,12 +740,7 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-text38 {
-            color: rgb(255, 255, 255);
             display: inline-block;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            text-transform: capitalize;
           }
           .home-text39 {
             display: inline-block;
@@ -1054,15 +1000,6 @@ const Home = (props) => {
               width: 100%;
               grid-template-columns: repeat(1, 1fr);
             }
-            .home-text17 {
-              width: auto;
-            }
-            .home-text23 {
-              width: auto;
-            }
-            .home-text25 {
-              width: auto;
-            }
             .home-content4 {
               gap: var(--dl-space-space-threeunits);
               width: 100%;
@@ -1135,3 +1072,14 @@ const Home = (props) => {
 }
 
 export default Home
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

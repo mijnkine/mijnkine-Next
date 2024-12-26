@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
+import { useTranslations } from 'next-intl'
 
 import FeatureCard4 from './feature-card4'
 
@@ -11,7 +12,7 @@ const Office = (props) => {
         <h1 className="office-text1">
           {props.heading ?? (
             <Fragment>
-              <h1 className="office-text2">Onze praktijk</h1>
+              <span className="office-text2">Onze praktijk</span>
             </Fragment>
           )}
         </h1>
@@ -53,6 +54,10 @@ const Office = (props) => {
             max-width: var(--dl-size-size-maxwidth);
             flex-direction: column;
           }
+          .office-text1 {
+            font-size: 3rem;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
           .office-separator {
             width: 100px;
             height: 2px;
@@ -82,8 +87,6 @@ const Office = (props) => {
           }
           .office-text2 {
             display: inline-block;
-            font-size: 3rem;
-            margin-bottom: var(--dl-space-space-twounits);
           }
           @media (max-width: 991px) {
             .office-office {
@@ -107,9 +110,6 @@ const Office = (props) => {
               padding-right: var(--dl-space-space-twounits);
             }
             .office-text1 {
-              text-align: center;
-            }
-            .office-text2 {
               text-align: center;
             }
           }

@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from 'react'
 
 import PropTypes from 'prop-types'
+import { useTranslations } from 'next-intl'
 
 const VeelgesteldeVragenComp = (props) => {
   const [faq6Visible, setFaq6Visible] = useState(false)
@@ -66,10 +67,10 @@ const VeelgesteldeVragenComp = (props) => {
                 </div>
                 {faq1Visible && (
                   <div className="veelgestelde-vragen-comp-container14">
-                    <span>
+                    <span className="thq-body-small">
                       {props.text2 ?? (
                         <Fragment>
-                          <span className="veelgestelde-vragen-comp-text36 thq-body-small">
+                          <span className="veelgestelde-vragen-comp-text40">
                             <span>- Voorschrift van de dokter</span>
                             <br></br>
                             <span>- Verslagen, beeldvorming,...</span>
@@ -140,6 +141,10 @@ const VeelgesteldeVragenComp = (props) => {
                         - Parking einde Reinpadstraat (hoek met Bochtlaan); op
                         50m van de praktijk
                       </span>
+                      <br></br>
+                      <br></br>
+                      <span>Denk aan je parkeerschijf te leggen.</span>
+                      <br></br>
                     </span>
                   </div>
                 )}
@@ -178,10 +183,10 @@ const VeelgesteldeVragenComp = (props) => {
                 </div>
                 {faq3Visible && (
                   <div className="veelgestelde-vragen-comp-container20">
-                    <span>
+                    <span className="thq-body-small">
                       {props.text1 ?? (
                         <Fragment>
-                          <span className="veelgestelde-vragen-comp-text49 thq-body-small">
+                          <span className="veelgestelde-vragen-comp-text53">
                             <span>
                               Indien nodig doen wij huisbezoeken. Indien je
                               mobiliteit het toelaat, raden we toch aan
@@ -270,10 +275,10 @@ const VeelgesteldeVragenComp = (props) => {
                 </div>
                 {faq5Visible && (
                   <div className="veelgestelde-vragen-comp-container26">
-                    <span>
+                    <span className="thq-body-small">
                       {props.text ?? (
                         <Fragment>
-                          <span className="veelgestelde-vragen-comp-text24 thq-body-small">
+                          <span className="veelgestelde-vragen-comp-text28">
                             <span>
                               Een afspraak kan gemaakt worden via onze
                               <span
@@ -356,10 +361,10 @@ const VeelgesteldeVragenComp = (props) => {
                 </div>
                 {faq6Visible && (
                   <div className="veelgestelde-vragen-comp-container29">
-                    <span>
+                    <span className="thq-body-small">
                       {props.text3 ?? (
                         <Fragment>
-                          <span className="veelgestelde-vragen-comp-text30 thq-body-small">
+                          <span className="veelgestelde-vragen-comp-text34">
                             <span>
                               Annuleren kan gemakkelijk door te bellen of een
                               mailtje te sturen. Gelieve dit wel
@@ -683,7 +688,7 @@ const VeelgesteldeVragenComp = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .veelgestelde-vragen-comp-text24 {
+          .veelgestelde-vragen-comp-text28 {
             display: inline-block;
           }
           .veelgestelde-vragen-comp-link2 {
@@ -695,13 +700,13 @@ const VeelgesteldeVragenComp = (props) => {
           .veelgestelde-vragen-comp-link4 {
             text-decoration: underline;
           }
-          .veelgestelde-vragen-comp-text30 {
+          .veelgestelde-vragen-comp-text34 {
             display: inline-block;
           }
-          .veelgestelde-vragen-comp-text36 {
+          .veelgestelde-vragen-comp-text40 {
             display: inline-block;
           }
-          .veelgestelde-vragen-comp-text49 {
+          .veelgestelde-vragen-comp-text53 {
             display: inline-block;
           }
 
