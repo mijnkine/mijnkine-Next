@@ -345,7 +345,7 @@ const Home = (props) => {
         </section>
         <section id="team" className="home-team">
           <div className="home-heading6">
-            <h2 className="home-text40">Ondek ons team</h2>
+            <h2 className="home-text40">Ontdek ons team</h2>
           </div>
           <div className="home-list">
             <div data-teleport="doctors" className="home-doctors">
@@ -367,6 +367,17 @@ const Home = (props) => {
                     imageAlt="Arne Budo"
                     imageSrc="/Team/arnebudo-300w.png"
                     className="home-component21"
+                  ></TeamMember>
+                </a>
+              </Link>
+              <Link href="/team/laurens">
+                <a className="home-link21">
+                  <TeamMember
+                    text="Kinesitherapeut"
+                    heading="Laurens Depraetere"
+                    imageAlt="Laurens Depraetere"
+                    imageSrc="/Team/laurensdepraetere-300w.png"
+                    className="home-component22"
                   ></TeamMember>
                 </a>
               </Link>
