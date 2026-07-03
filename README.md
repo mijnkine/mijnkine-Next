@@ -2,7 +2,7 @@
 
 [mijnkine.be](https://mijnkine.be)
 
-Mijn Kine: Uw expert in kinesitherapie in Genk. Persoonlijke behandelingen voor revalidatie, blessurepreventie en pijnverlichting.
+Uw expert in kinesitherapie in Genk. Persoonlijke behandelingen voor revalidatie, blessurepreventie en pijnverlichting.
 
 ## Team
 - [Stijn](https://mijnkine.be/team/stijn)
