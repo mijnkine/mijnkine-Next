@@ -190,7 +190,7 @@ const Home = (props) => {
           <div className="home-container2"></div>
           <div className="home-content4">
             <div className="home-grid2">
-              <Link href="/aanpak/manueletherapie">
+              <Link href="/aanpak/manueletherapie" legacyBehavior>
                 <a>
                   <div className="home-practice-wrapper1">
                     <AanpakPreview
@@ -215,7 +215,7 @@ const Home = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/aanpak/algemenetherapie">
+              <Link href="/aanpak/algemenetherapie" legacyBehavior>
                 <a>
                   <div className="home-practice-wrapper2">
                     <AanpakPreview
@@ -239,7 +239,7 @@ const Home = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/aanpak/kaakklachten">
+              <Link href="/aanpak/kaakklachten" legacyBehavior>
                 <a>
                   <div className="home-practice-wrapper3">
                     <AanpakPreview
@@ -263,7 +263,7 @@ const Home = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/aanpak/dryneedling">
+              <Link href="/aanpak/dryneedling" legacyBehavior>
                 <a>
                   <div className="home-practice-wrapper4">
                     <AanpakPreview
@@ -288,7 +288,7 @@ const Home = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/aanpak/taping">
+              <Link href="/aanpak/taping" legacyBehavior>
                 <a>
                   <div className="home-practice-wrapper5">
                     <AanpakPreview
@@ -316,7 +316,7 @@ const Home = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/aanpak/sportrevalidatie">
+              <Link href="/aanpak/sportrevalidatie" legacyBehavior>
                 <a>
                   <div className="home-practice-wrapper6">
                     <AanpakPreview
@@ -349,7 +349,7 @@ const Home = (props) => {
           </div>
           <div className="home-list">
             <div data-teleport="doctors" className="home-doctors">
-              <Link href="/team/stijn">
+              <Link href="/team/stijn" legacyBehavior>
                 <a className="home-link19">
                   <TeamMember
                     text="Kinesitherapeut"
@@ -359,7 +359,7 @@ const Home = (props) => {
                   ></TeamMember>
                 </a>
               </Link>
-              <Link href="/team/arne">
+              <Link href="/team/arne" legacyBehavior>
                 <a className="home-link20">
                   <TeamMember
                     text="Kinesitherapeut"
@@ -370,7 +370,7 @@ const Home = (props) => {
                   ></TeamMember>
                 </a>
               </Link>
-              <Link href="/team/laurens">
+              <Link href="/team/laurens" legacyBehavior>
                 <a className="home-link21">
                   <TeamMember
                     text="Kinesitherapeut"

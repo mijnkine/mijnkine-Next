@@ -14,7 +14,7 @@ const Navigation = (props) => {
     <>
       <div className={`navigation-container ${props.rootClassName} `}>
         <header data-thq="thq-navbar" className="navigation-navbar-interactive">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="navigation-link5">
               <img
                 alt={props.logoAlt}
@@ -31,7 +31,7 @@ const Navigation = (props) => {
               <a href="#team" className="navigation-link21 thq-body-small">
                 Team
               </a>
-              <Link href="/veelgestelde-vragen">
+              <Link href="/veelgestelde-vragen" legacyBehavior>
                 <a className="navigation-link6 thq-body-small">
                   <span>Veelgestelde vragen</span>
                   <br></br>
@@ -80,7 +80,7 @@ const Navigation = (props) => {
                 >
                   Team
                 </a>
-                <Link href="/veelgestelde-vragen">
+                <Link href="/veelgestelde-vragen" legacyBehavior>
                   <a className="navigation-link7 thq-body-small thq-link">
                     Veelgestelde vragen
                   </a>

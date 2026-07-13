@@ -34,7 +34,7 @@ const VeelgesteldeVragen = (props) => {
         </Head>
         <NavigationSimple rootClassName="navigation-simpleroot-class-name"></NavigationSimple>
         <div className="veelgestelde-vragen-back">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="veelgestelde-vragen-link1">
               <ButtonBack
                 rootClassName="button-backroot-class-name2"

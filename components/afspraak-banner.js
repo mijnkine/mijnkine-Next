@@ -7,7 +7,9 @@ import ButtonAfspraak from './button-afspraak'
 
 const AfspraakBanner = (props) => {
   props = { ...AfspraakBanner.defaultProps, ...props }
-  useEffect(() => import('@lottiefiles/lottie-player'), [])
+  useEffect(() => {
+    import('@lottiefiles/lottie-player')
+  }, [])
   return (
     <>
       <div

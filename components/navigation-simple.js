@@ -17,7 +17,7 @@ const NavigationSimple = (props) => {
           data-thq="thq-navbar"
           className="navigation-simple-navbar-interactive"
         >
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="navigation-simple-link5">
               <img
                 alt={props.logoAlt}
@@ -80,7 +80,7 @@ const NavigationSimple = (props) => {
                 >
                   {props.link2}
                 </a>
-                <Link href="/veelgestelde-vragen">
+                <Link href="/veelgestelde-vragen" legacyBehavior>
                   <a className="navigation-simple-link6 thq-body-small thq-link">
                     {props.link3}
                   </a>
