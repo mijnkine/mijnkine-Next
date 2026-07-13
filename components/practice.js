@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Practice = (props) => {
+  props = { ...Practice.defaultProps, ...props }
   return (
     <>
       <div className="practice-practice">

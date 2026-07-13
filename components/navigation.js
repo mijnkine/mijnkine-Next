@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 import ButtonAfspraak from './button-afspraak'
 
 const Navigation = (props) => {
+  props = { ...Navigation.defaultProps, ...props }
   const [link5AccordionOpen, setLink5AccordionOpen] = useState(false)
   const [link5DropdownVisible, setLink5DropdownVisible] = useState(false)
   return (

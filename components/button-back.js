@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const ButtonBack = (props) => {
+  props = { ...ButtonBack.defaultProps, ...props }
   return (
     <>
       <div className={`button-back-container ${props.rootClassName} `}>

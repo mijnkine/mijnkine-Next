@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Gallery = (props) => {
+  props = { ...Gallery.defaultProps, ...props }
   return (
     <>
       <div

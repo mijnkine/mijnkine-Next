@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const TeamMember = (props) => {
+  props = { ...TeamMember.defaultProps, ...props }
   return (
     <>
       <div className="team-member-doctor">

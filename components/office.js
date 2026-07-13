@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl'
 import FeatureCard4 from './feature-card4'
 
 const Office = (props) => {
+  props = { ...Office.defaultProps, ...props }
   return (
     <>
       <div id="praktijk" className="office-office">

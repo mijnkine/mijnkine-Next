@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const AppComponent = (props) => {
+  props = { ...AppComponent.defaultProps, ...props }
   return (
     <>
       <div className="component-container">

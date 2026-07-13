@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Footer = (props) => {
+  props = { ...Footer.defaultProps, ...props }
   return (
     <>
       <footer className={`footer-footer ${props.rootClassName} `}>

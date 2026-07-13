@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl'
 import ButtonAfspraak from './button-afspraak'
 
 const AfspraakBanner = (props) => {
+  props = { ...AfspraakBanner.defaultProps, ...props }
   useEffect(() => import('@lottiefiles/lottie-player'), [])
   return (
     <>

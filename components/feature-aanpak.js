@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const FeatureAanpak = (props) => {
+  props = { ...FeatureAanpak.defaultProps, ...props }
   return (
     <>
       <div

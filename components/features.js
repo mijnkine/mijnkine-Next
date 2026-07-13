@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Features = (props) => {
+  props = { ...Features.defaultProps, ...props }
   return (
     <>
       <div className={`features-section quick-links ${props.rootClassName} `}>

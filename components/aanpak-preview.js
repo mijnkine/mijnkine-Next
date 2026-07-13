@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const AanpakPreview = (props) => {
+  props = { ...AanpakPreview.defaultProps, ...props }
   return (
     <>
       <div className={`aanpak-preview-container1 ${props.rootClassName} `}>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const ButtonAfspraak = (props) => {
+  props = { ...ButtonAfspraak.defaultProps, ...props }
   return (
     <>
       <div className={`button-afspraak-container ${props.rootClassName} `}>

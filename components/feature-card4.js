@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const FeatureCard4 = (props) => {
+  props = { ...FeatureCard4.defaultProps, ...props }
   return (
     <>
       <div className={`feature-card4-feature-card ${props.rootClassName} `}>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const ContentList4 = (props) => {
+  props = { ...ContentList4.defaultProps, ...props }
   return (
     <>
       <div className="content-list4-container thq-section-padding">

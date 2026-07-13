@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const VeelgesteldeVragenComp = (props) => {
+  props = { ...VeelgesteldeVragenComp.defaultProps, ...props }
   const [faq6Visible, setFaq6Visible] = useState(false)
   const [faq3Visible, setFaq3Visible] = useState(false)
   const [faq5Visible, setFaq5Visible] = useState(false)

@@ -4,20 +4,27 @@
   "description": "A next project generated based on a UIDL document",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "author": "TeleportHQ",
   "license": "MIT",
   "dependencies": {
-    "next": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "next-intl": "2.10.0",
-    "prop-types": "15.7.2",
+    "next": "^15.5.20",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next-intl": "^3.26.5",
+    "prop-types": "^15.8.1",
     "@lottiefiles/lottie-player": "1.6.0"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.1",
+    "wrangler": "^4.110.0"
   },
   "engines": {
     "node": ">=18.x"

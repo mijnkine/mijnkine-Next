@@ -1,0 +1,28 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# opennext / cloudflare
+/.open-next/
+/.wrangler/
+cloudflare-env.d.ts
+
+# vercel / next-on-pages (legacy)
+/.vercel
+
+# local env
+.dev.vars
+.env*.local
+
+# misc
+.DS_Store
+*.pem
+.idea/
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
