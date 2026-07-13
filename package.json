@@ -19,10 +19,6 @@
     "prop-types": "15.7.2",
     "@lottiefiles/lottie-player": "1.6.0"
   },
-  "devDependencies": {
-    "@cloudflare/next-on-pages": "1.13.16",
-    "@cloudflare/workers-types": "^4.20240208.0"
-  },
   "engines": {
     "node": ">=18.x"
   }
