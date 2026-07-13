@@ -20,7 +20,6 @@ npm run dev
 
 This site is deployed to Cloudflare Workers using
 [`@opennextjs/cloudflare`](https://opennext.js.org/cloudflare)
-(replacing the deprecated `@cloudflare/next-on-pages`).
 
 ```bash
 # Build and preview locally in the Workers runtime
